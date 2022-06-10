@@ -1,0 +1,1624 @@
+
+
+============================== 2022-05-23 01:28:50.733775 | e311dd5a-ae3b-4c94-9315-6b1912fccf81 ==============================
+01:28:50.733798 [info ] [MainThread]: Running with dbt=1.1.0
+01:28:50.735617 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/data/userdata/profiles/dbt/286f4de16da95bae985c38b53413da9e', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'target': 'phedrus_1', 'parse_only': False, 'which': 'compile', 'rpc_method': 'compile', 'indirect_selection': 'eager'}
+01:28:50.735920 [debug] [MainThread]: Tracking: tracking
+01:28:50.745384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68158efe50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68158fcb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68158dbd90>]}
+01:28:50.768028 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+01:28:50.768538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e311dd5a-ae3b-4c94-9315-6b1912fccf81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6814091590>]}
+01:28:50.805542 [debug] [MainThread]: Parsing macros/relations.sql
+01:28:50.807379 [debug] [MainThread]: Parsing macros/catalog.sql
+01:28:50.809845 [debug] [MainThread]: Parsing macros/adapters.sql
+01:28:50.833688 [debug] [MainThread]: Parsing macros/materializations/snapshot_merge.sql
+01:28:50.835613 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+01:28:50.838018 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+01:28:50.848661 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+01:28:50.851749 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+01:28:50.854970 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+01:28:50.865595 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+01:28:50.873304 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+01:28:50.878215 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+01:28:50.879995 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+01:28:50.882843 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+01:28:50.884491 [debug] [MainThread]: Parsing macros/etc/statement.sql
+01:28:50.889375 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+01:28:50.898632 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+01:28:50.902971 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+01:28:50.905589 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+01:28:50.912505 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+01:28:50.929800 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+01:28:50.931846 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+01:28:50.936879 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+01:28:50.938863 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+01:28:50.957748 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+01:28:50.969227 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+01:28:50.971151 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+01:28:50.984606 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+01:28:50.987345 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+01:28:51.027137 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+01:28:51.028774 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+01:28:51.036317 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+01:28:51.039622 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+01:28:51.047632 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+01:28:51.052730 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+01:28:51.054429 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+01:28:51.065466 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+01:28:51.081374 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+01:28:51.098638 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+01:28:51.099717 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+01:28:51.101295 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+01:28:51.102078 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+01:28:51.103067 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+01:28:51.316431 [debug] [MainThread]: 1699: static parser successfully parsed example/orders.sql
+01:28:51.329395 [debug] [MainThread]: 1699: static parser successfully parsed example/customers.sql
+01:28:51.509914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e311dd5a-ae3b-4c94-9315-6b1912fccf81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6814139290>]}
+01:28:51.572473 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e311dd5a-ae3b-4c94-9315-6b1912fccf81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68158cda90>]}
+01:28:51.572819 [info ] [MainThread]: Found 2 models, 8 tests, 0 snapshots, 0 analyses, 167 macros, 0 operations, 4 seed files, 0 sources, 0 exposures, 2 metrics
+01:28:51.573095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e311dd5a-ae3b-4c94-9315-6b1912fccf81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6816382650>]}
+01:28:51.575251 [info ] [MainThread]: 
+01:28:51.575812 [debug] [MainThread]: Acquiring new postgres connection "master"
+01:28:51.576867 [debug] [ThreadPool]: Acquiring new postgres connection "list_marketplace_demo_public"
+01:28:51.587410 [debug] [ThreadPool]: Using postgres connection "list_marketplace_demo_public"
+01:28:51.587671 [debug] [ThreadPool]: On list_marketplace_demo_public: BEGIN
+01:28:51.587811 [debug] [ThreadPool]: Opening a new connection, currently in state init
+01:28:51.618354 [debug] [ThreadPool]: SQL status: BEGIN in 0.03 seconds
+01:28:51.618550 [debug] [ThreadPool]: Using postgres connection "list_marketplace_demo_public"
+01:28:51.618698 [debug] [ThreadPool]: On list_marketplace_demo_public: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "connection_name": "list_marketplace_demo_public"} */
+select
+      'marketplace_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'marketplace_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+  
+01:28:51.622113 [debug] [ThreadPool]: SQL status: SELECT 18 in 0.0 seconds
+01:28:51.623689 [debug] [ThreadPool]: On list_marketplace_demo_public: ROLLBACK
+01:28:51.625009 [debug] [ThreadPool]: On list_marketplace_demo_public: Close
+01:28:51.629586 [debug] [MainThread]: Using postgres connection "master"
+01:28:51.629751 [debug] [MainThread]: On master: BEGIN
+01:28:51.629878 [debug] [MainThread]: Opening a new connection, currently in state init
+01:28:51.647791 [debug] [MainThread]: SQL status: BEGIN in 0.02 seconds
+01:28:51.648007 [debug] [MainThread]: Using postgres connection "master"
+01:28:51.648159 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+01:28:51.673307 [debug] [MainThread]: SQL status: SELECT 5 in 0.03 seconds
+01:28:51.674514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e311dd5a-ae3b-4c94-9315-6b1912fccf81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6813bec090>]}
+01:28:51.674784 [debug] [MainThread]: On master: ROLLBACK
+01:28:51.676074 [debug] [MainThread]: On master: Close
+01:28:51.676446 [info ] [MainThread]: Concurrency: 5 threads (target='phedrus_1')
+01:28:51.676767 [info ] [MainThread]: 
+01:28:51.678837 [debug] [Thread-1  ]: Began running node seed.marketplace_demo.newcustomer
+01:28:51.679089 [debug] [Thread-2  ]: Began running node seed.marketplace_demo.newdriver
+01:28:51.679254 [debug] [Thread-3  ]: Began running node seed.marketplace_demo.neworder
+01:28:51.679401 [debug] [Thread-4  ]: Began running node seed.marketplace_demo.newrestaurants
+01:28:51.679694 [debug] [Thread-1  ]: Acquiring new postgres connection "seed.marketplace_demo.newcustomer"
+01:28:51.680026 [debug] [Thread-2  ]: Acquiring new postgres connection "seed.marketplace_demo.newdriver"
+01:28:51.680474 [debug] [Thread-3  ]: Acquiring new postgres connection "seed.marketplace_demo.neworder"
+01:28:51.680811 [debug] [Thread-4  ]: Acquiring new postgres connection "seed.marketplace_demo.newrestaurants"
+01:28:51.681008 [debug] [Thread-1  ]: Began compiling node seed.marketplace_demo.newcustomer
+01:28:51.681176 [debug] [Thread-2  ]: Began compiling node seed.marketplace_demo.newdriver
+01:28:51.681337 [debug] [Thread-3  ]: Began compiling node seed.marketplace_demo.neworder
+01:28:51.681496 [debug] [Thread-4  ]: Began compiling node seed.marketplace_demo.newrestaurants
+01:28:51.681666 [debug] [Thread-1  ]: Compiling seed.marketplace_demo.newcustomer
+01:28:51.681842 [debug] [Thread-2  ]: Compiling seed.marketplace_demo.newdriver
+01:28:51.681998 [debug] [Thread-3  ]: Compiling seed.marketplace_demo.neworder
+01:28:51.682155 [debug] [Thread-4  ]: Compiling seed.marketplace_demo.newrestaurants
+01:28:51.683478 [debug] [Thread-1  ]: Writing injected SQL for node "seed.marketplace_demo.newcustomer"
+01:28:51.684766 [debug] [Thread-2  ]: Writing injected SQL for node "seed.marketplace_demo.newdriver"
+01:28:51.686463 [debug] [Thread-3  ]: Writing injected SQL for node "seed.marketplace_demo.neworder"
+01:28:51.687649 [debug] [Thread-4  ]: Writing injected SQL for node "seed.marketplace_demo.newrestaurants"
+01:28:51.687858 [debug] [Thread-1  ]: finished collecting timing info
+01:28:51.688027 [debug] [Thread-2  ]: finished collecting timing info
+01:28:51.688185 [debug] [Thread-3  ]: finished collecting timing info
+01:28:51.688343 [debug] [Thread-4  ]: finished collecting timing info
+01:28:51.688512 [debug] [Thread-1  ]: Began executing node seed.marketplace_demo.newcustomer
+01:28:51.688679 [debug] [Thread-2  ]: Began executing node seed.marketplace_demo.newdriver
+01:28:51.688844 [debug] [Thread-3  ]: Began executing node seed.marketplace_demo.neworder
+01:28:51.689006 [debug] [Thread-4  ]: Began executing node seed.marketplace_demo.newrestaurants
+01:28:51.689177 [debug] [Thread-1  ]: finished collecting timing info
+01:28:51.689339 [debug] [Thread-2  ]: finished collecting timing info
+01:28:51.689497 [debug] [Thread-3  ]: finished collecting timing info
+01:28:51.689655 [debug] [Thread-4  ]: finished collecting timing info
+01:28:51.690046 [debug] [Thread-1  ]: Finished running node seed.marketplace_demo.newcustomer
+01:28:51.690447 [debug] [Thread-2  ]: Finished running node seed.marketplace_demo.newdriver
+01:28:51.690855 [debug] [Thread-3  ]: Finished running node seed.marketplace_demo.neworder
+01:28:51.691279 [debug] [Thread-4  ]: Finished running node seed.marketplace_demo.newrestaurants
+01:28:51.691920 [debug] [Thread-5  ]: Began running node model.marketplace_demo.customers
+01:28:51.692229 [debug] [Thread-5  ]: Acquiring new postgres connection "model.marketplace_demo.customers"
+01:28:51.692378 [debug] [Thread-5  ]: Began compiling node model.marketplace_demo.customers
+01:28:51.692507 [debug] [Thread-5  ]: Compiling model.marketplace_demo.customers
+01:28:51.695197 [debug] [Thread-5  ]: Writing injected SQL for node "model.marketplace_demo.customers"
+01:28:51.695417 [debug] [Thread-1  ]: Began running node model.marketplace_demo.orders
+01:28:51.695779 [debug] [Thread-1  ]: Acquiring new postgres connection "model.marketplace_demo.orders"
+01:28:51.695937 [debug] [Thread-1  ]: Began compiling node model.marketplace_demo.orders
+01:28:51.696067 [debug] [Thread-1  ]: Compiling model.marketplace_demo.orders
+01:28:51.698301 [debug] [Thread-1  ]: Writing injected SQL for node "model.marketplace_demo.orders"
+01:28:51.728909 [debug] [Thread-1  ]: finished collecting timing info
+01:28:51.729098 [debug] [Thread-1  ]: Began executing node model.marketplace_demo.orders
+01:28:51.729243 [debug] [Thread-1  ]: finished collecting timing info
+01:28:51.729623 [debug] [Thread-1  ]: Finished running node model.marketplace_demo.orders
+01:28:51.730075 [debug] [Thread-3  ]: Began running node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+01:28:51.730257 [debug] [Thread-4  ]: Began running node test.marketplace_demo.not_null_orders_amount.106140f9fd
+01:28:51.730431 [debug] [Thread-2  ]: Began running node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+01:28:51.730703 [debug] [Thread-3  ]: Acquiring new postgres connection "test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0"
+01:28:51.730864 [debug] [Thread-1  ]: Began running node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+01:28:51.731194 [debug] [Thread-4  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_orders_amount.106140f9fd"
+01:28:51.731493 [debug] [Thread-2  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_orders_customer_id.c5f02694af"
+01:28:51.731677 [debug] [Thread-3  ]: Began compiling node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+01:28:51.732042 [debug] [Thread-1  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc"
+01:28:51.732234 [debug] [Thread-4  ]: Began compiling node test.marketplace_demo.not_null_orders_amount.106140f9fd
+01:28:51.732404 [debug] [Thread-2  ]: Began compiling node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+01:28:51.732625 [debug] [Thread-5  ]: finished collecting timing info
+01:28:51.732771 [debug] [Thread-3  ]: Compiling test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+01:28:51.732937 [debug] [Thread-1  ]: Began compiling node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+01:28:51.733227 [debug] [Thread-4  ]: Compiling test.marketplace_demo.not_null_orders_amount.106140f9fd
+01:28:51.733391 [debug] [Thread-2  ]: Compiling test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+01:28:51.733564 [debug] [Thread-5  ]: Began executing node model.marketplace_demo.customers
+01:28:51.738596 [debug] [Thread-3  ]: Writing injected SQL for node "test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0"
+01:28:51.738796 [debug] [Thread-1  ]: Compiling test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+01:28:51.757377 [debug] [Thread-1  ]: Writing injected SQL for node "test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc"
+01:28:51.753754 [debug] [Thread-2  ]: Writing injected SQL for node "test.marketplace_demo.not_null_orders_customer_id.c5f02694af"
+01:28:51.753971 [debug] [Thread-5  ]: finished collecting timing info
+01:28:51.758127 [debug] [Thread-5  ]: Finished running node model.marketplace_demo.customers
+01:28:51.758335 [debug] [Thread-5  ]: Began running node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+01:28:51.750270 [debug] [Thread-4  ]: Writing injected SQL for node "test.marketplace_demo.not_null_orders_amount.106140f9fd"
+01:28:51.759051 [debug] [Thread-5  ]: Acquiring new postgres connection "test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249"
+01:28:51.759399 [debug] [Thread-5  ]: Began compiling node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+01:28:51.759547 [debug] [Thread-5  ]: Compiling test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+01:28:51.765835 [debug] [Thread-5  ]: Writing injected SQL for node "test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249"
+01:28:51.775340 [debug] [Thread-1  ]: finished collecting timing info
+01:28:51.775520 [debug] [Thread-1  ]: Began executing node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+01:28:51.775659 [debug] [Thread-1  ]: finished collecting timing info
+01:28:51.775998 [debug] [Thread-1  ]: Finished running node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+01:28:51.776185 [debug] [Thread-1  ]: Began running node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+01:28:51.776522 [debug] [Thread-1  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d"
+01:28:51.776675 [debug] [Thread-1  ]: Began compiling node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+01:28:51.776803 [debug] [Thread-1  ]: Compiling test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+01:28:51.780366 [debug] [Thread-1  ]: Writing injected SQL for node "test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d"
+01:28:51.780566 [debug] [Thread-3  ]: finished collecting timing info
+01:28:51.780857 [debug] [Thread-3  ]: Began executing node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+01:28:51.781013 [debug] [Thread-3  ]: finished collecting timing info
+01:28:51.781354 [debug] [Thread-3  ]: Finished running node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+01:28:51.781551 [debug] [Thread-3  ]: Began running node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+01:28:51.781935 [debug] [Thread-3  ]: Acquiring new postgres connection "test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+01:28:51.782133 [debug] [Thread-3  ]: Began compiling node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+01:28:51.782300 [debug] [Thread-3  ]: Compiling test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+01:28:51.786897 [debug] [Thread-3  ]: Writing injected SQL for node "test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+01:28:51.787243 [debug] [Thread-5  ]: finished collecting timing info
+01:28:51.787467 [debug] [Thread-5  ]: Began executing node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+01:28:51.787661 [debug] [Thread-5  ]: finished collecting timing info
+01:28:51.788048 [debug] [Thread-5  ]: Finished running node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+01:28:51.788359 [debug] [Thread-5  ]: Began running node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+01:28:51.788713 [debug] [Thread-5  ]: Acquiring new postgres connection "test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1"
+01:28:51.788976 [debug] [Thread-5  ]: Began compiling node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+01:28:51.789216 [debug] [Thread-5  ]: Compiling test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+01:28:51.792848 [debug] [Thread-5  ]: Writing injected SQL for node "test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1"
+01:28:51.793073 [debug] [Thread-4  ]: finished collecting timing info
+01:28:51.793217 [debug] [Thread-2  ]: finished collecting timing info
+01:28:51.793697 [debug] [Thread-2  ]: Began executing node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+01:28:51.793898 [debug] [Thread-2  ]: finished collecting timing info
+01:28:51.794267 [debug] [Thread-2  ]: Finished running node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+01:28:51.793468 [debug] [Thread-4  ]: Began executing node test.marketplace_demo.not_null_orders_amount.106140f9fd
+01:28:51.794530 [debug] [Thread-4  ]: finished collecting timing info
+01:28:51.794869 [debug] [Thread-4  ]: Finished running node test.marketplace_demo.not_null_orders_amount.106140f9fd
+01:28:51.797184 [debug] [Thread-1  ]: finished collecting timing info
+01:28:51.797358 [debug] [Thread-1  ]: Began executing node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+01:28:51.797495 [debug] [Thread-1  ]: finished collecting timing info
+01:28:51.797843 [debug] [Thread-1  ]: Finished running node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+01:28:51.800203 [debug] [Thread-3  ]: finished collecting timing info
+01:28:51.800378 [debug] [Thread-3  ]: Began executing node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+01:28:51.800518 [debug] [Thread-3  ]: finished collecting timing info
+01:28:51.800847 [debug] [Thread-3  ]: Finished running node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+01:28:51.804548 [debug] [Thread-5  ]: finished collecting timing info
+01:28:51.804721 [debug] [Thread-5  ]: Began executing node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+01:28:51.804857 [debug] [Thread-5  ]: finished collecting timing info
+01:28:51.805183 [debug] [Thread-5  ]: Finished running node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+01:28:51.881453 [debug] [MainThread]: Connection 'master' was properly closed.
+01:28:51.881743 [debug] [MainThread]: Connection 'test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d' was properly closed.
+01:28:51.881884 [debug] [MainThread]: Connection 'test.marketplace_demo.not_null_orders_customer_id.c5f02694af' was properly closed.
+01:28:51.882024 [debug] [MainThread]: Connection 'test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2' was properly closed.
+01:28:51.882157 [debug] [MainThread]: Connection 'test.marketplace_demo.not_null_orders_amount.106140f9fd' was properly closed.
+01:28:51.882287 [debug] [MainThread]: Connection 'test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1' was properly closed.
+01:28:51.937884 [info ] [MainThread]: Done.
+01:28:51.938832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f681046e810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f681046e890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f681046e950>]}
+
+
+============================== 2022-05-23 02:01:19.782462 | c8173867-d64f-41be-bcdb-a0bb69b95c62 ==============================
+02:01:19.782490 [info ] [MainThread]: Running with dbt=1.1.0
+02:01:19.783334 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/data/userdata/profiles/dbt/286f4de16da95bae985c38b53413da9e', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'target': 'phedrus_1', 'parse_only': False, 'which': 'compile', 'rpc_method': 'compile', 'indirect_selection': 'eager'}
+02:01:19.783599 [debug] [MainThread]: Tracking: tracking
+02:01:19.794888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c0cdb1fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c0cdbe790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c0cdbeb90>]}
+02:01:19.908710 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+02:01:19.908962 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+02:01:19.916205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c8173867-d64f-41be-bcdb-a0bb69b95c62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c0cd48710>]}
+02:01:20.033492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c8173867-d64f-41be-bcdb-a0bb69b95c62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c0d8a5cd0>]}
+02:01:20.033903 [info ] [MainThread]: Found 2 models, 8 tests, 0 snapshots, 0 analyses, 167 macros, 0 operations, 4 seed files, 0 sources, 0 exposures, 2 metrics
+02:01:20.034216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8173867-d64f-41be-bcdb-a0bb69b95c62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c0d8a55d0>]}
+02:01:20.036110 [info ] [MainThread]: 
+02:01:20.036687 [debug] [MainThread]: Acquiring new postgres connection "master"
+02:01:20.037719 [debug] [ThreadPool]: Acquiring new postgres connection "list_marketplace_demo_public"
+02:01:20.048283 [debug] [ThreadPool]: Using postgres connection "list_marketplace_demo_public"
+02:01:20.048452 [debug] [ThreadPool]: On list_marketplace_demo_public: BEGIN
+02:01:20.048580 [debug] [ThreadPool]: Opening a new connection, currently in state init
+02:01:20.097055 [debug] [ThreadPool]: SQL status: BEGIN in 0.05 seconds
+02:01:20.097257 [debug] [ThreadPool]: Using postgres connection "list_marketplace_demo_public"
+02:01:20.097398 [debug] [ThreadPool]: On list_marketplace_demo_public: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "connection_name": "list_marketplace_demo_public"} */
+select
+      'marketplace_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'marketplace_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+  
+02:01:20.100902 [debug] [ThreadPool]: SQL status: SELECT 18 in 0.0 seconds
+02:01:20.102508 [debug] [ThreadPool]: On list_marketplace_demo_public: ROLLBACK
+02:01:20.103831 [debug] [ThreadPool]: On list_marketplace_demo_public: Close
+02:01:20.108496 [debug] [MainThread]: Using postgres connection "master"
+02:01:20.108664 [debug] [MainThread]: On master: BEGIN
+02:01:20.108789 [debug] [MainThread]: Opening a new connection, currently in state init
+02:01:20.129309 [debug] [MainThread]: SQL status: BEGIN in 0.02 seconds
+02:01:20.129505 [debug] [MainThread]: Using postgres connection "master"
+02:01:20.129635 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+02:01:20.158921 [debug] [MainThread]: SQL status: SELECT 5 in 0.03 seconds
+02:01:20.160297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8173867-d64f-41be-bcdb-a0bb69b95c62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c0d89a890>]}
+02:01:20.160580 [debug] [MainThread]: On master: ROLLBACK
+02:01:20.161892 [debug] [MainThread]: On master: Close
+02:01:20.162385 [info ] [MainThread]: Concurrency: 5 threads (target='phedrus_1')
+02:01:20.162671 [info ] [MainThread]: 
+02:01:20.165043 [debug] [Thread-1  ]: Began running node seed.marketplace_demo.newcustomer
+02:01:20.165263 [debug] [Thread-2  ]: Began running node seed.marketplace_demo.newdriver
+02:01:20.165611 [debug] [Thread-1  ]: Acquiring new postgres connection "seed.marketplace_demo.newcustomer"
+02:01:20.165785 [debug] [Thread-3  ]: Began running node seed.marketplace_demo.neworder
+02:01:20.165991 [debug] [Thread-4  ]: Began running node seed.marketplace_demo.newrestaurants
+02:01:20.166304 [debug] [Thread-2  ]: Acquiring new postgres connection "seed.marketplace_demo.newdriver"
+02:01:20.166504 [debug] [Thread-1  ]: Began compiling node seed.marketplace_demo.newcustomer
+02:01:20.166815 [debug] [Thread-3  ]: Acquiring new postgres connection "seed.marketplace_demo.neworder"
+02:01:20.167154 [debug] [Thread-4  ]: Acquiring new postgres connection "seed.marketplace_demo.newrestaurants"
+02:01:20.167338 [debug] [Thread-2  ]: Began compiling node seed.marketplace_demo.newdriver
+02:01:20.167517 [debug] [Thread-1  ]: Compiling seed.marketplace_demo.newcustomer
+02:01:20.167677 [debug] [Thread-3  ]: Began compiling node seed.marketplace_demo.neworder
+02:01:20.167833 [debug] [Thread-4  ]: Began compiling node seed.marketplace_demo.newrestaurants
+02:01:20.167986 [debug] [Thread-2  ]: Compiling seed.marketplace_demo.newdriver
+02:01:20.169429 [debug] [Thread-1  ]: Writing injected SQL for node "seed.marketplace_demo.newcustomer"
+02:01:20.169642 [debug] [Thread-3  ]: Compiling seed.marketplace_demo.neworder
+02:01:20.169826 [debug] [Thread-4  ]: Compiling seed.marketplace_demo.newrestaurants
+02:01:20.171129 [debug] [Thread-2  ]: Writing injected SQL for node "seed.marketplace_demo.newdriver"
+02:01:20.171334 [debug] [Thread-1  ]: finished collecting timing info
+02:01:20.172532 [debug] [Thread-3  ]: Writing injected SQL for node "seed.marketplace_demo.neworder"
+02:01:20.173797 [debug] [Thread-4  ]: Writing injected SQL for node "seed.marketplace_demo.newrestaurants"
+02:01:20.173995 [debug] [Thread-2  ]: finished collecting timing info
+02:01:20.174176 [debug] [Thread-1  ]: Began executing node seed.marketplace_demo.newcustomer
+02:01:20.174337 [debug] [Thread-3  ]: finished collecting timing info
+02:01:20.174492 [debug] [Thread-4  ]: finished collecting timing info
+02:01:20.174652 [debug] [Thread-2  ]: Began executing node seed.marketplace_demo.newdriver
+02:01:20.174820 [debug] [Thread-1  ]: finished collecting timing info
+02:01:20.174981 [debug] [Thread-3  ]: Began executing node seed.marketplace_demo.neworder
+02:01:20.175167 [debug] [Thread-4  ]: Began executing node seed.marketplace_demo.newrestaurants
+02:01:20.175332 [debug] [Thread-2  ]: finished collecting timing info
+02:01:20.175725 [debug] [Thread-1  ]: Finished running node seed.marketplace_demo.newcustomer
+02:01:20.175919 [debug] [Thread-3  ]: finished collecting timing info
+02:01:20.176083 [debug] [Thread-4  ]: finished collecting timing info
+02:01:20.176469 [debug] [Thread-2  ]: Finished running node seed.marketplace_demo.newdriver
+02:01:20.176925 [debug] [Thread-3  ]: Finished running node seed.marketplace_demo.neworder
+02:01:20.177422 [debug] [Thread-4  ]: Finished running node seed.marketplace_demo.newrestaurants
+02:01:20.178004 [debug] [Thread-5  ]: Began running node model.marketplace_demo.customers
+02:01:20.178313 [debug] [Thread-5  ]: Acquiring new postgres connection "model.marketplace_demo.customers"
+02:01:20.178460 [debug] [Thread-5  ]: Began compiling node model.marketplace_demo.customers
+02:01:20.178588 [debug] [Thread-5  ]: Compiling model.marketplace_demo.customers
+02:01:20.181448 [debug] [Thread-5  ]: Writing injected SQL for node "model.marketplace_demo.customers"
+02:01:20.181648 [debug] [Thread-1  ]: Began running node model.marketplace_demo.orders
+02:01:20.182029 [debug] [Thread-1  ]: Acquiring new postgres connection "model.marketplace_demo.orders"
+02:01:20.182187 [debug] [Thread-1  ]: Began compiling node model.marketplace_demo.orders
+02:01:20.182315 [debug] [Thread-1  ]: Compiling model.marketplace_demo.orders
+02:01:20.184576 [debug] [Thread-1  ]: Writing injected SQL for node "model.marketplace_demo.orders"
+02:01:20.199491 [debug] [Thread-1  ]: finished collecting timing info
+02:01:20.199680 [debug] [Thread-1  ]: Began executing node model.marketplace_demo.orders
+02:01:20.199837 [debug] [Thread-1  ]: finished collecting timing info
+02:01:20.200045 [debug] [Thread-5  ]: finished collecting timing info
+02:01:20.200429 [debug] [Thread-1  ]: Finished running node model.marketplace_demo.orders
+02:01:20.200619 [debug] [Thread-5  ]: Began executing node model.marketplace_demo.customers
+02:01:20.200838 [debug] [Thread-5  ]: finished collecting timing info
+02:01:20.201214 [debug] [Thread-5  ]: Finished running node model.marketplace_demo.customers
+02:01:20.201735 [debug] [Thread-3  ]: Began running node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+02:01:20.201924 [debug] [Thread-4  ]: Began running node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+02:01:20.202197 [debug] [Thread-3  ]: Acquiring new postgres connection "test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0"
+02:01:20.202366 [debug] [Thread-2  ]: Began running node test.marketplace_demo.not_null_orders_amount.106140f9fd
+02:01:20.202597 [debug] [Thread-1  ]: Began running node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+02:01:20.202886 [debug] [Thread-4  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d"
+02:01:20.203064 [debug] [Thread-5  ]: Began running node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+02:01:20.203240 [debug] [Thread-3  ]: Began compiling node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+02:01:20.203632 [debug] [Thread-2  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_orders_amount.106140f9fd"
+02:01:20.203945 [debug] [Thread-1  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_orders_customer_id.c5f02694af"
+02:01:20.204126 [debug] [Thread-4  ]: Began compiling node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+02:01:20.204411 [debug] [Thread-5  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc"
+02:01:20.204636 [debug] [Thread-3  ]: Compiling test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+02:01:20.204804 [debug] [Thread-2  ]: Began compiling node test.marketplace_demo.not_null_orders_amount.106140f9fd
+02:01:20.204964 [debug] [Thread-1  ]: Began compiling node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+02:01:20.205119 [debug] [Thread-4  ]: Compiling test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+02:01:20.205280 [debug] [Thread-5  ]: Began compiling node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+02:01:20.219552 [debug] [Thread-3  ]: Writing injected SQL for node "test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0"
+02:01:20.219750 [debug] [Thread-2  ]: Compiling test.marketplace_demo.not_null_orders_amount.106140f9fd
+02:01:20.219944 [debug] [Thread-1  ]: Compiling test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+02:01:20.228788 [debug] [Thread-4  ]: Writing injected SQL for node "test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d"
+02:01:20.228991 [debug] [Thread-5  ]: Compiling test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+02:01:20.232542 [debug] [Thread-2  ]: Writing injected SQL for node "test.marketplace_demo.not_null_orders_amount.106140f9fd"
+02:01:20.236092 [debug] [Thread-1  ]: Writing injected SQL for node "test.marketplace_demo.not_null_orders_customer_id.c5f02694af"
+02:01:20.239747 [debug] [Thread-5  ]: Writing injected SQL for node "test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc"
+02:01:20.243743 [debug] [Thread-3  ]: finished collecting timing info
+02:01:20.243922 [debug] [Thread-3  ]: Began executing node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+02:01:20.244065 [debug] [Thread-3  ]: finished collecting timing info
+02:01:20.244412 [debug] [Thread-3  ]: Finished running node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+02:01:20.244607 [debug] [Thread-3  ]: Began running node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+02:01:20.244949 [debug] [Thread-3  ]: Acquiring new postgres connection "test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+02:01:20.245102 [debug] [Thread-3  ]: Began compiling node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+02:01:20.245230 [debug] [Thread-3  ]: Compiling test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+02:01:20.251874 [debug] [Thread-4  ]: finished collecting timing info
+02:01:20.252088 [debug] [Thread-4  ]: Began executing node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+02:01:20.253907 [debug] [Thread-4  ]: finished collecting timing info
+02:01:20.254301 [debug] [Thread-4  ]: Finished running node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+02:01:20.254494 [debug] [Thread-4  ]: Began running node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+02:01:20.254791 [debug] [Thread-4  ]: Acquiring new postgres connection "test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1"
+02:01:20.253542 [debug] [Thread-3  ]: Writing injected SQL for node "test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+02:01:20.255041 [debug] [Thread-4  ]: Began compiling node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+02:01:20.255300 [debug] [Thread-4  ]: Compiling test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+02:01:20.261715 [debug] [Thread-4  ]: Writing injected SQL for node "test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1"
+02:01:20.261958 [debug] [Thread-2  ]: finished collecting timing info
+02:01:20.262158 [debug] [Thread-1  ]: finished collecting timing info
+02:01:20.262336 [debug] [Thread-2  ]: Began executing node test.marketplace_demo.not_null_orders_amount.106140f9fd
+02:01:20.262468 [debug] [Thread-5  ]: finished collecting timing info
+02:01:20.262645 [debug] [Thread-1  ]: Began executing node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+02:01:20.262813 [debug] [Thread-2  ]: finished collecting timing info
+02:01:20.262975 [debug] [Thread-5  ]: Began executing node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+02:01:20.263175 [debug] [Thread-1  ]: finished collecting timing info
+02:01:20.263578 [debug] [Thread-2  ]: Finished running node test.marketplace_demo.not_null_orders_amount.106140f9fd
+02:01:20.263813 [debug] [Thread-5  ]: finished collecting timing info
+02:01:20.264189 [debug] [Thread-1  ]: Finished running node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+02:01:20.264409 [debug] [Thread-2  ]: Began running node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+02:01:20.264877 [debug] [Thread-5  ]: Finished running node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+02:01:20.265298 [debug] [Thread-2  ]: Acquiring new postgres connection "test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249"
+02:01:20.265581 [debug] [Thread-2  ]: Began compiling node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+02:01:20.265724 [debug] [Thread-2  ]: Compiling test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+02:01:20.269015 [debug] [Thread-2  ]: Writing injected SQL for node "test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249"
+02:01:20.275486 [debug] [Thread-3  ]: finished collecting timing info
+02:01:20.275662 [debug] [Thread-3  ]: Began executing node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+02:01:20.275800 [debug] [Thread-3  ]: finished collecting timing info
+02:01:20.276133 [debug] [Thread-3  ]: Finished running node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+02:01:20.276368 [debug] [Thread-4  ]: finished collecting timing info
+02:01:20.276520 [debug] [Thread-4  ]: Began executing node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+02:01:20.276654 [debug] [Thread-4  ]: finished collecting timing info
+02:01:20.276976 [debug] [Thread-4  ]: Finished running node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+02:01:20.281339 [debug] [Thread-2  ]: finished collecting timing info
+02:01:20.281510 [debug] [Thread-2  ]: Began executing node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+02:01:20.281646 [debug] [Thread-2  ]: finished collecting timing info
+02:01:20.281972 [debug] [Thread-2  ]: Finished running node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+02:01:20.365156 [debug] [MainThread]: Connection 'master' was properly closed.
+02:01:20.365335 [debug] [MainThread]: Connection 'test.marketplace_demo.not_null_orders_customer_id.c5f02694af' was properly closed.
+02:01:20.365457 [debug] [MainThread]: Connection 'test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249' was properly closed.
+02:01:20.365572 [debug] [MainThread]: Connection 'test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2' was properly closed.
+02:01:20.365683 [debug] [MainThread]: Connection 'test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1' was properly closed.
+02:01:20.365794 [debug] [MainThread]: Connection 'test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc' was properly closed.
+02:01:20.432338 [info ] [MainThread]: Done.
+02:01:20.432722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c0d89d0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c0cda3050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c0b519090>]}
+
+
+============================== 2022-05-24 02:03:38.118905 | c8238b52-7ed6-486f-8f3f-e83227186849 ==============================
+02:03:38.118933 [info ] [MainThread]: Running with dbt=1.1.0
+02:03:38.120029 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/data/userdata/profiles/dbt/286f4de16da95bae985c38b53413da9e', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'target': 'phedrus_1', 'parse_only': False, 'which': 'compile', 'rpc_method': 'compile', 'indirect_selection': 'eager'}
+02:03:38.120363 [debug] [MainThread]: Tracking: tracking
+02:03:38.133641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62fddbdcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62fdda9750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62fddc96d0>]}
+02:03:38.228912 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+02:03:38.229208 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+02:03:38.236900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c8238b52-7ed6-486f-8f3f-e83227186849', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62fddce490>]}
+02:03:38.362685 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c8238b52-7ed6-486f-8f3f-e83227186849', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62fe8b1f50>]}
+02:03:38.363123 [info ] [MainThread]: Found 2 models, 8 tests, 0 snapshots, 0 analyses, 167 macros, 0 operations, 4 seed files, 0 sources, 0 exposures, 2 metrics
+02:03:38.363426 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8238b52-7ed6-486f-8f3f-e83227186849', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62fe8b1d50>]}
+02:03:38.365459 [info ] [MainThread]: 
+02:03:38.366081 [debug] [MainThread]: Acquiring new postgres connection "master"
+02:03:38.367156 [debug] [ThreadPool]: Acquiring new postgres connection "list_marketplace_demo_public"
+02:03:38.378039 [debug] [ThreadPool]: Using postgres connection "list_marketplace_demo_public"
+02:03:38.378257 [debug] [ThreadPool]: On list_marketplace_demo_public: BEGIN
+02:03:38.378390 [debug] [ThreadPool]: Opening a new connection, currently in state init
+02:03:38.402523 [debug] [ThreadPool]: SQL status: BEGIN in 0.02 seconds
+02:03:38.402804 [debug] [ThreadPool]: Using postgres connection "list_marketplace_demo_public"
+02:03:38.402939 [debug] [ThreadPool]: On list_marketplace_demo_public: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "connection_name": "list_marketplace_demo_public"} */
+select
+      'marketplace_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'marketplace_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+  
+02:03:38.406419 [debug] [ThreadPool]: SQL status: SELECT 18 in 0.0 seconds
+02:03:38.408117 [debug] [ThreadPool]: On list_marketplace_demo_public: ROLLBACK
+02:03:38.409545 [debug] [ThreadPool]: On list_marketplace_demo_public: Close
+02:03:38.414676 [debug] [MainThread]: Using postgres connection "master"
+02:03:38.414884 [debug] [MainThread]: On master: BEGIN
+02:03:38.415012 [debug] [MainThread]: Opening a new connection, currently in state init
+02:03:38.433223 [debug] [MainThread]: SQL status: BEGIN in 0.02 seconds
+02:03:38.433567 [debug] [MainThread]: Using postgres connection "master"
+02:03:38.433711 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+02:03:38.457950 [debug] [MainThread]: SQL status: SELECT 5 in 0.02 seconds
+02:03:38.459485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8238b52-7ed6-486f-8f3f-e83227186849', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62fe8a5050>]}
+02:03:38.459819 [debug] [MainThread]: On master: ROLLBACK
+02:03:38.461121 [debug] [MainThread]: On master: Close
+02:03:38.461644 [info ] [MainThread]: Concurrency: 5 threads (target='phedrus_1')
+02:03:38.462041 [info ] [MainThread]: 
+02:03:38.464709 [debug] [Thread-1  ]: Began running node seed.marketplace_demo.newcustomer
+02:03:38.464947 [debug] [Thread-2  ]: Began running node seed.marketplace_demo.newdriver
+02:03:38.465378 [debug] [Thread-1  ]: Acquiring new postgres connection "seed.marketplace_demo.newcustomer"
+02:03:38.465559 [debug] [Thread-3  ]: Began running node seed.marketplace_demo.neworder
+02:03:38.465743 [debug] [Thread-4  ]: Began running node seed.marketplace_demo.newrestaurants
+02:03:38.466120 [debug] [Thread-2  ]: Acquiring new postgres connection "seed.marketplace_demo.newdriver"
+02:03:38.466327 [debug] [Thread-1  ]: Began compiling node seed.marketplace_demo.newcustomer
+02:03:38.466684 [debug] [Thread-3  ]: Acquiring new postgres connection "seed.marketplace_demo.neworder"
+02:03:38.467026 [debug] [Thread-4  ]: Acquiring new postgres connection "seed.marketplace_demo.newrestaurants"
+02:03:38.467218 [debug] [Thread-2  ]: Began compiling node seed.marketplace_demo.newdriver
+02:03:38.467403 [debug] [Thread-1  ]: Compiling seed.marketplace_demo.newcustomer
+02:03:38.467564 [debug] [Thread-3  ]: Began compiling node seed.marketplace_demo.neworder
+02:03:38.467722 [debug] [Thread-4  ]: Began compiling node seed.marketplace_demo.newrestaurants
+02:03:38.467883 [debug] [Thread-2  ]: Compiling seed.marketplace_demo.newdriver
+02:03:38.469465 [debug] [Thread-1  ]: Writing injected SQL for node "seed.marketplace_demo.newcustomer"
+02:03:38.469682 [debug] [Thread-3  ]: Compiling seed.marketplace_demo.neworder
+02:03:38.469848 [debug] [Thread-4  ]: Compiling seed.marketplace_demo.newrestaurants
+02:03:38.471392 [debug] [Thread-2  ]: Writing injected SQL for node "seed.marketplace_demo.newdriver"
+02:03:38.471615 [debug] [Thread-1  ]: finished collecting timing info
+02:03:38.472897 [debug] [Thread-3  ]: Writing injected SQL for node "seed.marketplace_demo.neworder"
+02:03:38.474277 [debug] [Thread-4  ]: Writing injected SQL for node "seed.marketplace_demo.newrestaurants"
+02:03:38.474497 [debug] [Thread-2  ]: finished collecting timing info
+02:03:38.474694 [debug] [Thread-1  ]: Began executing node seed.marketplace_demo.newcustomer
+02:03:38.474861 [debug] [Thread-3  ]: finished collecting timing info
+02:03:38.475018 [debug] [Thread-4  ]: finished collecting timing info
+02:03:38.475183 [debug] [Thread-2  ]: Began executing node seed.marketplace_demo.newdriver
+02:03:38.475359 [debug] [Thread-1  ]: finished collecting timing info
+02:03:38.475522 [debug] [Thread-3  ]: Began executing node seed.marketplace_demo.neworder
+02:03:38.475685 [debug] [Thread-4  ]: Began executing node seed.marketplace_demo.newrestaurants
+02:03:38.475851 [debug] [Thread-2  ]: finished collecting timing info
+02:03:38.476326 [debug] [Thread-1  ]: Finished running node seed.marketplace_demo.newcustomer
+02:03:38.476530 [debug] [Thread-3  ]: finished collecting timing info
+02:03:38.476701 [debug] [Thread-4  ]: finished collecting timing info
+02:03:38.477184 [debug] [Thread-2  ]: Finished running node seed.marketplace_demo.newdriver
+02:03:38.477692 [debug] [Thread-3  ]: Finished running node seed.marketplace_demo.neworder
+02:03:38.478225 [debug] [Thread-4  ]: Finished running node seed.marketplace_demo.newrestaurants
+02:03:38.478908 [debug] [Thread-5  ]: Began running node model.marketplace_demo.customers
+02:03:38.479100 [debug] [Thread-1  ]: Began running node model.marketplace_demo.orders
+02:03:38.479453 [debug] [Thread-5  ]: Acquiring new postgres connection "model.marketplace_demo.customers"
+02:03:38.479785 [debug] [Thread-1  ]: Acquiring new postgres connection "model.marketplace_demo.orders"
+02:03:38.479974 [debug] [Thread-5  ]: Began compiling node model.marketplace_demo.customers
+02:03:38.480140 [debug] [Thread-1  ]: Began compiling node model.marketplace_demo.orders
+02:03:38.480306 [debug] [Thread-5  ]: Compiling model.marketplace_demo.customers
+02:03:38.480463 [debug] [Thread-1  ]: Compiling model.marketplace_demo.orders
+02:03:38.483819 [debug] [Thread-5  ]: Writing injected SQL for node "model.marketplace_demo.customers"
+02:03:38.486371 [debug] [Thread-1  ]: Writing injected SQL for node "model.marketplace_demo.orders"
+02:03:38.502310 [debug] [Thread-1  ]: finished collecting timing info
+02:03:38.502594 [debug] [Thread-5  ]: finished collecting timing info
+02:03:38.502792 [debug] [Thread-1  ]: Began executing node model.marketplace_demo.orders
+02:03:38.502976 [debug] [Thread-5  ]: Began executing node model.marketplace_demo.customers
+02:03:38.503167 [debug] [Thread-1  ]: finished collecting timing info
+02:03:38.503338 [debug] [Thread-5  ]: finished collecting timing info
+02:03:38.503903 [debug] [Thread-1  ]: Finished running node model.marketplace_demo.orders
+02:03:38.504450 [debug] [Thread-5  ]: Finished running node model.marketplace_demo.customers
+02:03:38.505211 [debug] [Thread-3  ]: Began running node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+02:03:38.505544 [debug] [Thread-4  ]: Began running node test.marketplace_demo.not_null_orders_amount.106140f9fd
+02:03:38.505876 [debug] [Thread-3  ]: Acquiring new postgres connection "test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0"
+02:03:38.506081 [debug] [Thread-2  ]: Began running node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+02:03:38.506274 [debug] [Thread-1  ]: Began running node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+02:03:38.506583 [debug] [Thread-4  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_orders_amount.106140f9fd"
+02:03:38.506752 [debug] [Thread-5  ]: Began running node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+02:03:38.506938 [debug] [Thread-3  ]: Began compiling node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+02:03:38.507407 [debug] [Thread-2  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_orders_customer_id.c5f02694af"
+02:03:38.507763 [debug] [Thread-1  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc"
+02:03:38.507959 [debug] [Thread-4  ]: Began compiling node test.marketplace_demo.not_null_orders_amount.106140f9fd
+02:03:38.508267 [debug] [Thread-5  ]: Acquiring new postgres connection "test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249"
+02:03:38.508477 [debug] [Thread-3  ]: Compiling test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+02:03:38.508647 [debug] [Thread-2  ]: Began compiling node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+02:03:38.508810 [debug] [Thread-1  ]: Began compiling node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+02:03:38.508975 [debug] [Thread-4  ]: Compiling test.marketplace_demo.not_null_orders_amount.106140f9fd
+02:03:38.509176 [debug] [Thread-5  ]: Began compiling node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+02:03:38.524771 [debug] [Thread-3  ]: Writing injected SQL for node "test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0"
+02:03:38.525043 [debug] [Thread-2  ]: Compiling test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+02:03:38.525249 [debug] [Thread-1  ]: Compiling test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+02:03:38.534979 [debug] [Thread-4  ]: Writing injected SQL for node "test.marketplace_demo.not_null_orders_amount.106140f9fd"
+02:03:38.535274 [debug] [Thread-5  ]: Compiling test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+02:03:38.539469 [debug] [Thread-2  ]: Writing injected SQL for node "test.marketplace_demo.not_null_orders_customer_id.c5f02694af"
+02:03:38.543591 [debug] [Thread-1  ]: Writing injected SQL for node "test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc"
+02:03:38.551324 [debug] [Thread-5  ]: Writing injected SQL for node "test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249"
+02:03:38.554838 [debug] [Thread-3  ]: finished collecting timing info
+02:03:38.555093 [debug] [Thread-3  ]: Began executing node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+02:03:38.555250 [debug] [Thread-3  ]: finished collecting timing info
+02:03:38.555724 [debug] [Thread-3  ]: Finished running node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+02:03:38.555944 [debug] [Thread-3  ]: Began running node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+02:03:38.556263 [debug] [Thread-3  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d"
+02:03:38.556477 [debug] [Thread-3  ]: Began compiling node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+02:03:38.556776 [debug] [Thread-3  ]: Compiling test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+02:03:38.561174 [debug] [Thread-3  ]: Writing injected SQL for node "test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d"
+02:03:38.561523 [debug] [Thread-4  ]: finished collecting timing info
+02:03:38.561875 [debug] [Thread-4  ]: Began executing node test.marketplace_demo.not_null_orders_amount.106140f9fd
+02:03:38.562057 [debug] [Thread-4  ]: finished collecting timing info
+02:03:38.562484 [debug] [Thread-4  ]: Finished running node test.marketplace_demo.not_null_orders_amount.106140f9fd
+02:03:38.562690 [debug] [Thread-4  ]: Began running node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+02:03:38.563058 [debug] [Thread-4  ]: Acquiring new postgres connection "test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+02:03:38.563494 [debug] [Thread-4  ]: Began compiling node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+02:03:38.563749 [debug] [Thread-4  ]: Compiling test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+02:03:38.569344 [debug] [Thread-1  ]: finished collecting timing info
+02:03:38.569554 [debug] [Thread-5  ]: finished collecting timing info
+02:03:38.569698 [debug] [Thread-2  ]: finished collecting timing info
+02:03:38.573517 [debug] [Thread-4  ]: Writing injected SQL for node "test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+02:03:38.573804 [debug] [Thread-1  ]: Began executing node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+02:03:38.574010 [debug] [Thread-5  ]: Began executing node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+02:03:38.574198 [debug] [Thread-2  ]: Began executing node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+02:03:38.574632 [debug] [Thread-1  ]: finished collecting timing info
+02:03:38.574913 [debug] [Thread-5  ]: finished collecting timing info
+02:03:38.575113 [debug] [Thread-2  ]: finished collecting timing info
+02:03:38.575708 [debug] [Thread-1  ]: Finished running node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+02:03:38.576271 [debug] [Thread-5  ]: Finished running node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+02:03:38.576779 [debug] [Thread-2  ]: Finished running node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+02:03:38.577065 [debug] [Thread-1  ]: Began running node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+02:03:38.577685 [debug] [Thread-1  ]: Acquiring new postgres connection "test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1"
+02:03:38.577868 [debug] [Thread-1  ]: Began compiling node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+02:03:38.578078 [debug] [Thread-1  ]: Compiling test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+02:03:38.582163 [debug] [Thread-1  ]: Writing injected SQL for node "test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1"
+02:03:38.582396 [debug] [Thread-3  ]: finished collecting timing info
+02:03:38.582772 [debug] [Thread-3  ]: Began executing node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+02:03:38.582960 [debug] [Thread-3  ]: finished collecting timing info
+02:03:38.583476 [debug] [Thread-3  ]: Finished running node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+02:03:38.588631 [debug] [Thread-4  ]: finished collecting timing info
+02:03:38.588889 [debug] [Thread-4  ]: Began executing node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+02:03:38.589085 [debug] [Thread-4  ]: finished collecting timing info
+02:03:38.589552 [debug] [Thread-4  ]: Finished running node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+02:03:38.596831 [debug] [Thread-1  ]: finished collecting timing info
+02:03:38.597113 [debug] [Thread-1  ]: Began executing node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+02:03:38.597270 [debug] [Thread-1  ]: finished collecting timing info
+02:03:38.597739 [debug] [Thread-1  ]: Finished running node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+02:03:38.669958 [debug] [MainThread]: Connection 'master' was properly closed.
+02:03:38.670228 [debug] [MainThread]: Connection 'test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1' was properly closed.
+02:03:38.670354 [debug] [MainThread]: Connection 'test.marketplace_demo.not_null_orders_customer_id.c5f02694af' was properly closed.
+02:03:38.670470 [debug] [MainThread]: Connection 'test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d' was properly closed.
+02:03:38.670583 [debug] [MainThread]: Connection 'test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2' was properly closed.
+02:03:38.670696 [debug] [MainThread]: Connection 'test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249' was properly closed.
+02:03:38.743001 [info ] [MainThread]: Done.
+02:03:38.743547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62f83bec50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62fc4eebd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62fc566610>]}
+
+
+============================== 2022-05-24 05:20:37.417487 | b1a6e98b-5ecf-45ac-bd3d-f565a57aa7f1 ==============================
+05:20:37.417514 [info ] [MainThread]: Running with dbt=1.1.0
+05:20:37.418348 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/data/userdata/profiles/dbt/286f4de16da95bae985c38b53413da9e', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'target': 'phedrus_1', 'parse_only': False, 'which': 'compile', 'rpc_method': 'compile', 'indirect_selection': 'eager'}
+05:20:37.418638 [debug] [MainThread]: Tracking: tracking
+05:20:37.436495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa35eb756d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa35eb59250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa35eb7aa90>]}
+05:20:37.527919 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+05:20:37.528157 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+05:20:37.535262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b1a6e98b-5ecf-45ac-bd3d-f565a57aa7f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa35eb6ded0>]}
+05:20:37.656872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b1a6e98b-5ecf-45ac-bd3d-f565a57aa7f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa35f656d90>]}
+05:20:37.657268 [info ] [MainThread]: Found 2 models, 8 tests, 0 snapshots, 0 analyses, 167 macros, 0 operations, 4 seed files, 0 sources, 0 exposures, 2 metrics
+05:20:37.657577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b1a6e98b-5ecf-45ac-bd3d-f565a57aa7f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa35f622490>]}
+05:20:37.659572 [info ] [MainThread]: 
+05:20:37.660209 [debug] [MainThread]: Acquiring new postgres connection "master"
+05:20:37.661763 [debug] [ThreadPool]: Acquiring new postgres connection "list_marketplace_demo_public"
+05:20:37.672309 [debug] [ThreadPool]: Using postgres connection "list_marketplace_demo_public"
+05:20:37.672478 [debug] [ThreadPool]: On list_marketplace_demo_public: BEGIN
+05:20:37.672606 [debug] [ThreadPool]: Opening a new connection, currently in state init
+05:20:37.707459 [debug] [ThreadPool]: SQL status: BEGIN in 0.03 seconds
+05:20:37.707658 [debug] [ThreadPool]: Using postgres connection "list_marketplace_demo_public"
+05:20:37.707869 [debug] [ThreadPool]: On list_marketplace_demo_public: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "connection_name": "list_marketplace_demo_public"} */
+select
+      'marketplace_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'marketplace_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+  
+05:20:37.711432 [debug] [ThreadPool]: SQL status: SELECT 18 in 0.0 seconds
+05:20:37.712979 [debug] [ThreadPool]: On list_marketplace_demo_public: ROLLBACK
+05:20:37.714324 [debug] [ThreadPool]: On list_marketplace_demo_public: Close
+05:20:37.718955 [debug] [MainThread]: Using postgres connection "master"
+05:20:37.719144 [debug] [MainThread]: On master: BEGIN
+05:20:37.719271 [debug] [MainThread]: Opening a new connection, currently in state init
+05:20:37.737589 [debug] [MainThread]: SQL status: BEGIN in 0.02 seconds
+05:20:37.737764 [debug] [MainThread]: Using postgres connection "master"
+05:20:37.737894 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+05:20:37.762995 [debug] [MainThread]: SQL status: SELECT 5 in 0.02 seconds
+05:20:37.764266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b1a6e98b-5ecf-45ac-bd3d-f565a57aa7f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa35d3b7610>]}
+05:20:37.764534 [debug] [MainThread]: On master: ROLLBACK
+05:20:37.765878 [debug] [MainThread]: On master: Close
+05:20:37.766303 [info ] [MainThread]: Concurrency: 5 threads (target='phedrus_1')
+05:20:37.766588 [info ] [MainThread]: 
+05:20:37.768755 [debug] [Thread-1  ]: Began running node seed.marketplace_demo.newcustomer
+05:20:37.768969 [debug] [Thread-2  ]: Began running node seed.marketplace_demo.newdriver
+05:20:37.769143 [debug] [Thread-3  ]: Began running node seed.marketplace_demo.neworder
+05:20:37.769287 [debug] [Thread-4  ]: Began running node seed.marketplace_demo.newrestaurants
+05:20:37.769627 [debug] [Thread-1  ]: Acquiring new postgres connection "seed.marketplace_demo.newcustomer"
+05:20:37.769963 [debug] [Thread-2  ]: Acquiring new postgres connection "seed.marketplace_demo.newdriver"
+05:20:37.770300 [debug] [Thread-3  ]: Acquiring new postgres connection "seed.marketplace_demo.neworder"
+05:20:37.770627 [debug] [Thread-4  ]: Acquiring new postgres connection "seed.marketplace_demo.newrestaurants"
+05:20:37.770839 [debug] [Thread-1  ]: Began compiling node seed.marketplace_demo.newcustomer
+05:20:37.771010 [debug] [Thread-2  ]: Began compiling node seed.marketplace_demo.newdriver
+05:20:37.771169 [debug] [Thread-3  ]: Began compiling node seed.marketplace_demo.neworder
+05:20:37.771325 [debug] [Thread-4  ]: Began compiling node seed.marketplace_demo.newrestaurants
+05:20:37.771495 [debug] [Thread-1  ]: Compiling seed.marketplace_demo.newcustomer
+05:20:37.771649 [debug] [Thread-2  ]: Compiling seed.marketplace_demo.newdriver
+05:20:37.771800 [debug] [Thread-3  ]: Compiling seed.marketplace_demo.neworder
+05:20:37.771949 [debug] [Thread-4  ]: Compiling seed.marketplace_demo.newrestaurants
+05:20:37.773354 [debug] [Thread-1  ]: Writing injected SQL for node "seed.marketplace_demo.newcustomer"
+05:20:37.774650 [debug] [Thread-2  ]: Writing injected SQL for node "seed.marketplace_demo.newdriver"
+05:20:37.775854 [debug] [Thread-3  ]: Writing injected SQL for node "seed.marketplace_demo.neworder"
+05:20:37.777069 [debug] [Thread-4  ]: Writing injected SQL for node "seed.marketplace_demo.newrestaurants"
+05:20:37.777283 [debug] [Thread-1  ]: finished collecting timing info
+05:20:37.777466 [debug] [Thread-2  ]: finished collecting timing info
+05:20:37.777627 [debug] [Thread-3  ]: finished collecting timing info
+05:20:37.777784 [debug] [Thread-4  ]: finished collecting timing info
+05:20:37.777954 [debug] [Thread-1  ]: Began executing node seed.marketplace_demo.newcustomer
+05:20:37.778123 [debug] [Thread-2  ]: Began executing node seed.marketplace_demo.newdriver
+05:20:37.778290 [debug] [Thread-3  ]: Began executing node seed.marketplace_demo.neworder
+05:20:37.778454 [debug] [Thread-4  ]: Began executing node seed.marketplace_demo.newrestaurants
+05:20:37.778631 [debug] [Thread-1  ]: finished collecting timing info
+05:20:37.778817 [debug] [Thread-2  ]: finished collecting timing info
+05:20:37.778990 [debug] [Thread-3  ]: finished collecting timing info
+05:20:37.779152 [debug] [Thread-4  ]: finished collecting timing info
+05:20:37.779555 [debug] [Thread-1  ]: Finished running node seed.marketplace_demo.newcustomer
+05:20:37.779963 [debug] [Thread-2  ]: Finished running node seed.marketplace_demo.newdriver
+05:20:37.780356 [debug] [Thread-3  ]: Finished running node seed.marketplace_demo.neworder
+05:20:37.780750 [debug] [Thread-4  ]: Finished running node seed.marketplace_demo.newrestaurants
+05:20:37.781483 [debug] [Thread-5  ]: Began running node model.marketplace_demo.customers
+05:20:37.781683 [debug] [Thread-1  ]: Began running node model.marketplace_demo.orders
+05:20:37.782014 [debug] [Thread-5  ]: Acquiring new postgres connection "model.marketplace_demo.customers"
+05:20:37.782323 [debug] [Thread-1  ]: Acquiring new postgres connection "model.marketplace_demo.orders"
+05:20:37.782506 [debug] [Thread-5  ]: Began compiling node model.marketplace_demo.customers
+05:20:37.782670 [debug] [Thread-1  ]: Began compiling node model.marketplace_demo.orders
+05:20:37.782853 [debug] [Thread-5  ]: Compiling model.marketplace_demo.customers
+05:20:37.783008 [debug] [Thread-1  ]: Compiling model.marketplace_demo.orders
+05:20:37.785855 [debug] [Thread-5  ]: Writing injected SQL for node "model.marketplace_demo.customers"
+05:20:37.788112 [debug] [Thread-1  ]: Writing injected SQL for node "model.marketplace_demo.orders"
+05:20:37.802041 [debug] [Thread-1  ]: finished collecting timing info
+05:20:37.802233 [debug] [Thread-1  ]: Began executing node model.marketplace_demo.orders
+05:20:37.802378 [debug] [Thread-1  ]: finished collecting timing info
+05:20:37.802765 [debug] [Thread-1  ]: Finished running node model.marketplace_demo.orders
+05:20:37.802982 [debug] [Thread-5  ]: finished collecting timing info
+05:20:37.803195 [debug] [Thread-5  ]: Began executing node model.marketplace_demo.customers
+05:20:37.803340 [debug] [Thread-5  ]: finished collecting timing info
+05:20:37.803722 [debug] [Thread-5  ]: Finished running node model.marketplace_demo.customers
+05:20:37.804253 [debug] [Thread-3  ]: Began running node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+05:20:37.804455 [debug] [Thread-4  ]: Began running node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+05:20:37.804743 [debug] [Thread-3  ]: Acquiring new postgres connection "test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0"
+05:20:37.804915 [debug] [Thread-2  ]: Began running node test.marketplace_demo.not_null_orders_amount.106140f9fd
+05:20:37.805083 [debug] [Thread-1  ]: Began running node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+05:20:37.805258 [debug] [Thread-5  ]: Began running node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+05:20:37.805580 [debug] [Thread-4  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d"
+05:20:37.805769 [debug] [Thread-3  ]: Began compiling node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+05:20:37.806194 [debug] [Thread-2  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_orders_amount.106140f9fd"
+05:20:37.806509 [debug] [Thread-1  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_orders_customer_id.c5f02694af"
+05:20:37.806836 [debug] [Thread-5  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc"
+05:20:37.807024 [debug] [Thread-4  ]: Began compiling node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+05:20:37.807190 [debug] [Thread-3  ]: Compiling test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+05:20:37.807349 [debug] [Thread-2  ]: Began compiling node test.marketplace_demo.not_null_orders_amount.106140f9fd
+05:20:37.807509 [debug] [Thread-1  ]: Began compiling node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+05:20:37.807664 [debug] [Thread-5  ]: Began compiling node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+05:20:37.807824 [debug] [Thread-4  ]: Compiling test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+05:20:37.818268 [debug] [Thread-2  ]: Compiling test.marketplace_demo.not_null_orders_amount.106140f9fd
+05:20:37.822469 [debug] [Thread-3  ]: Writing injected SQL for node "test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0"
+05:20:37.822675 [debug] [Thread-1  ]: Compiling test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+05:20:37.822864 [debug] [Thread-5  ]: Compiling test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+05:20:37.831793 [debug] [Thread-4  ]: Writing injected SQL for node "test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d"
+05:20:37.835270 [debug] [Thread-2  ]: Writing injected SQL for node "test.marketplace_demo.not_null_orders_amount.106140f9fd"
+05:20:37.838848 [debug] [Thread-1  ]: Writing injected SQL for node "test.marketplace_demo.not_null_orders_customer_id.c5f02694af"
+05:20:37.842430 [debug] [Thread-5  ]: Writing injected SQL for node "test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc"
+05:20:37.851364 [debug] [Thread-3  ]: finished collecting timing info
+05:20:37.851551 [debug] [Thread-3  ]: Began executing node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+05:20:37.851697 [debug] [Thread-3  ]: finished collecting timing info
+05:20:37.852068 [debug] [Thread-3  ]: Finished running node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+05:20:37.852272 [debug] [Thread-3  ]: Began running node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+05:20:37.852562 [debug] [Thread-3  ]: Acquiring new postgres connection "test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+05:20:37.852887 [debug] [Thread-3  ]: Began compiling node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+05:20:37.853106 [debug] [Thread-3  ]: Compiling test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+05:20:37.861301 [debug] [Thread-3  ]: Writing injected SQL for node "test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+05:20:37.861489 [debug] [Thread-1  ]: finished collecting timing info
+05:20:37.861635 [debug] [Thread-5  ]: finished collecting timing info
+05:20:37.861765 [debug] [Thread-2  ]: finished collecting timing info
+05:20:37.862086 [debug] [Thread-1  ]: Began executing node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+05:20:37.862277 [debug] [Thread-5  ]: Began executing node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+05:20:37.862452 [debug] [Thread-2  ]: Began executing node test.marketplace_demo.not_null_orders_amount.106140f9fd
+05:20:37.862627 [debug] [Thread-1  ]: finished collecting timing info
+05:20:37.862815 [debug] [Thread-5  ]: finished collecting timing info
+05:20:37.862985 [debug] [Thread-2  ]: finished collecting timing info
+05:20:37.863438 [debug] [Thread-1  ]: Finished running node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+05:20:37.863853 [debug] [Thread-5  ]: Finished running node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+05:20:37.864248 [debug] [Thread-2  ]: Finished running node test.marketplace_demo.not_null_orders_amount.106140f9fd
+05:20:37.864482 [debug] [Thread-1  ]: Began running node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+05:20:37.864770 [debug] [Thread-5  ]: Began running node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+05:20:37.865358 [debug] [Thread-1  ]: Acquiring new postgres connection "test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1"
+05:20:37.865682 [debug] [Thread-5  ]: Acquiring new postgres connection "test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249"
+05:20:37.865895 [debug] [Thread-4  ]: finished collecting timing info
+05:20:37.866063 [debug] [Thread-1  ]: Began compiling node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+05:20:37.866232 [debug] [Thread-5  ]: Began compiling node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+05:20:37.866403 [debug] [Thread-4  ]: Began executing node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+05:20:37.866568 [debug] [Thread-1  ]: Compiling test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+05:20:37.866725 [debug] [Thread-5  ]: Compiling test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+05:20:37.866907 [debug] [Thread-4  ]: finished collecting timing info
+05:20:37.873381 [debug] [Thread-1  ]: Writing injected SQL for node "test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1"
+05:20:37.876772 [debug] [Thread-5  ]: Writing injected SQL for node "test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249"
+05:20:37.877316 [debug] [Thread-4  ]: Finished running node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+05:20:37.880796 [debug] [Thread-3  ]: finished collecting timing info
+05:20:37.880979 [debug] [Thread-3  ]: Began executing node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+05:20:37.881121 [debug] [Thread-3  ]: finished collecting timing info
+05:20:37.881476 [debug] [Thread-3  ]: Finished running node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+05:20:37.892566 [debug] [Thread-1  ]: finished collecting timing info
+05:20:37.892757 [debug] [Thread-1  ]: Began executing node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+05:20:37.892902 [debug] [Thread-1  ]: finished collecting timing info
+05:20:37.893248 [debug] [Thread-1  ]: Finished running node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+05:20:37.893506 [debug] [Thread-5  ]: finished collecting timing info
+05:20:37.893664 [debug] [Thread-5  ]: Began executing node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+05:20:37.893799 [debug] [Thread-5  ]: finished collecting timing info
+05:20:37.894130 [debug] [Thread-5  ]: Finished running node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+05:20:37.972823 [debug] [MainThread]: Connection 'master' was properly closed.
+05:20:37.973064 [debug] [MainThread]: Connection 'test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1' was properly closed.
+05:20:37.973190 [debug] [MainThread]: Connection 'test.marketplace_demo.not_null_orders_amount.106140f9fd' was properly closed.
+05:20:37.973319 [debug] [MainThread]: Connection 'test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2' was properly closed.
+05:20:37.973436 [debug] [MainThread]: Connection 'test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d' was properly closed.
+05:20:37.973549 [debug] [MainThread]: Connection 'test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249' was properly closed.
+05:20:38.048701 [info ] [MainThread]: Done.
+05:20:38.049189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa35d365390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa35c331510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa35c331d50>]}
+
+
+============================== 2022-05-25 07:11:00.504687 | 38570063-36e0-45c5-8b09-72ae3a3889f5 ==============================
+07:11:00.504716 [info ] [MainThread]: Running with dbt=1.1.0
+07:11:00.505607 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/data/userdata/profiles/dbt/286f4de16da95bae985c38b53413da9e', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'target': 'phedrus_1', 'parse_only': False, 'which': 'compile', 'rpc_method': 'compile', 'indirect_selection': 'eager'}
+07:11:00.505923 [debug] [MainThread]: Tracking: tracking
+07:11:00.532489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10d6a73e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10d6a73a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10d6a58ad0>]}
+07:11:00.620329 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+07:11:00.620580 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+07:11:00.627830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '38570063-36e0-45c5-8b09-72ae3a3889f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10d5212810>]}
+07:11:00.762542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '38570063-36e0-45c5-8b09-72ae3a3889f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10d755fc10>]}
+07:11:00.762985 [info ] [MainThread]: Found 2 models, 8 tests, 0 snapshots, 0 analyses, 167 macros, 0 operations, 4 seed files, 0 sources, 0 exposures, 2 metrics
+07:11:00.763283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '38570063-36e0-45c5-8b09-72ae3a3889f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10d755f5d0>]}
+07:11:00.765310 [info ] [MainThread]: 
+07:11:00.765983 [debug] [MainThread]: Acquiring new postgres connection "master"
+07:11:00.767114 [debug] [ThreadPool]: Acquiring new postgres connection "list_marketplace_demo_public"
+07:11:00.777811 [debug] [ThreadPool]: Using postgres connection "list_marketplace_demo_public"
+07:11:00.778011 [debug] [ThreadPool]: On list_marketplace_demo_public: BEGIN
+07:11:00.778139 [debug] [ThreadPool]: Opening a new connection, currently in state init
+07:11:00.800406 [debug] [ThreadPool]: SQL status: BEGIN in 0.02 seconds
+07:11:00.800681 [debug] [ThreadPool]: Using postgres connection "list_marketplace_demo_public"
+07:11:00.800814 [debug] [ThreadPool]: On list_marketplace_demo_public: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "connection_name": "list_marketplace_demo_public"} */
+select
+      'marketplace_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'marketplace_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+  
+07:11:00.803813 [debug] [ThreadPool]: SQL status: SELECT 18 in 0.0 seconds
+07:11:00.805590 [debug] [ThreadPool]: On list_marketplace_demo_public: ROLLBACK
+07:11:00.806488 [debug] [ThreadPool]: On list_marketplace_demo_public: Close
+07:11:00.811524 [debug] [MainThread]: Using postgres connection "master"
+07:11:00.811738 [debug] [MainThread]: On master: BEGIN
+07:11:00.811864 [debug] [MainThread]: Opening a new connection, currently in state init
+07:11:00.826435 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+07:11:00.826705 [debug] [MainThread]: Using postgres connection "master"
+07:11:00.826836 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+07:11:00.850628 [debug] [MainThread]: SQL status: SELECT 5 in 0.02 seconds
+07:11:00.852138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '38570063-36e0-45c5-8b09-72ae3a3889f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10d754cf90>]}
+07:11:00.852474 [debug] [MainThread]: On master: ROLLBACK
+07:11:00.853304 [debug] [MainThread]: On master: Close
+07:11:00.853856 [info ] [MainThread]: Concurrency: 5 threads (target='phedrus_1')
+07:11:00.854222 [info ] [MainThread]: 
+07:11:00.856714 [debug] [Thread-1  ]: Began running node seed.marketplace_demo.newcustomer
+07:11:00.856958 [debug] [Thread-2  ]: Began running node seed.marketplace_demo.newdriver
+07:11:00.857355 [debug] [Thread-1  ]: Acquiring new postgres connection "seed.marketplace_demo.newcustomer"
+07:11:00.857575 [debug] [Thread-3  ]: Began running node seed.marketplace_demo.neworder
+07:11:00.857785 [debug] [Thread-4  ]: Began running node seed.marketplace_demo.newrestaurants
+07:11:00.858152 [debug] [Thread-2  ]: Acquiring new postgres connection "seed.marketplace_demo.newdriver"
+07:11:00.858350 [debug] [Thread-1  ]: Began compiling node seed.marketplace_demo.newcustomer
+07:11:00.858683 [debug] [Thread-3  ]: Acquiring new postgres connection "seed.marketplace_demo.neworder"
+07:11:00.859021 [debug] [Thread-4  ]: Acquiring new postgres connection "seed.marketplace_demo.newrestaurants"
+07:11:00.859206 [debug] [Thread-2  ]: Began compiling node seed.marketplace_demo.newdriver
+07:11:00.859387 [debug] [Thread-1  ]: Compiling seed.marketplace_demo.newcustomer
+07:11:00.859549 [debug] [Thread-3  ]: Began compiling node seed.marketplace_demo.neworder
+07:11:00.859702 [debug] [Thread-4  ]: Began compiling node seed.marketplace_demo.newrestaurants
+07:11:00.859856 [debug] [Thread-2  ]: Compiling seed.marketplace_demo.newdriver
+07:11:00.861389 [debug] [Thread-1  ]: Writing injected SQL for node "seed.marketplace_demo.newcustomer"
+07:11:00.861629 [debug] [Thread-3  ]: Compiling seed.marketplace_demo.neworder
+07:11:00.861794 [debug] [Thread-4  ]: Compiling seed.marketplace_demo.newrestaurants
+07:11:00.863192 [debug] [Thread-2  ]: Writing injected SQL for node "seed.marketplace_demo.newdriver"
+07:11:00.863403 [debug] [Thread-1  ]: finished collecting timing info
+07:11:00.864668 [debug] [Thread-3  ]: Writing injected SQL for node "seed.marketplace_demo.neworder"
+07:11:00.865991 [debug] [Thread-4  ]: Writing injected SQL for node "seed.marketplace_demo.newrestaurants"
+07:11:00.866193 [debug] [Thread-2  ]: finished collecting timing info
+07:11:00.866374 [debug] [Thread-1  ]: Began executing node seed.marketplace_demo.newcustomer
+07:11:00.866535 [debug] [Thread-3  ]: finished collecting timing info
+07:11:00.866689 [debug] [Thread-4  ]: finished collecting timing info
+07:11:00.866848 [debug] [Thread-2  ]: Began executing node seed.marketplace_demo.newdriver
+07:11:00.867017 [debug] [Thread-1  ]: finished collecting timing info
+07:11:00.867176 [debug] [Thread-3  ]: Began executing node seed.marketplace_demo.neworder
+07:11:00.867333 [debug] [Thread-4  ]: Began executing node seed.marketplace_demo.newrestaurants
+07:11:00.867496 [debug] [Thread-2  ]: finished collecting timing info
+07:11:00.867941 [debug] [Thread-1  ]: Finished running node seed.marketplace_demo.newcustomer
+07:11:00.868138 [debug] [Thread-3  ]: finished collecting timing info
+07:11:00.868304 [debug] [Thread-4  ]: finished collecting timing info
+07:11:00.868728 [debug] [Thread-2  ]: Finished running node seed.marketplace_demo.newdriver
+07:11:00.869312 [debug] [Thread-3  ]: Finished running node seed.marketplace_demo.neworder
+07:11:00.869769 [debug] [Thread-4  ]: Finished running node seed.marketplace_demo.newrestaurants
+07:11:00.870420 [debug] [Thread-5  ]: Began running node model.marketplace_demo.customers
+07:11:00.870600 [debug] [Thread-1  ]: Began running node model.marketplace_demo.orders
+07:11:00.870926 [debug] [Thread-5  ]: Acquiring new postgres connection "model.marketplace_demo.customers"
+07:11:00.871238 [debug] [Thread-1  ]: Acquiring new postgres connection "model.marketplace_demo.orders"
+07:11:00.871418 [debug] [Thread-5  ]: Began compiling node model.marketplace_demo.customers
+07:11:00.871578 [debug] [Thread-1  ]: Began compiling node model.marketplace_demo.orders
+07:11:00.871735 [debug] [Thread-5  ]: Compiling model.marketplace_demo.customers
+07:11:00.871883 [debug] [Thread-1  ]: Compiling model.marketplace_demo.orders
+07:11:00.874967 [debug] [Thread-5  ]: Writing injected SQL for node "model.marketplace_demo.customers"
+07:11:00.877366 [debug] [Thread-1  ]: Writing injected SQL for node "model.marketplace_demo.orders"
+07:11:00.893177 [debug] [Thread-1  ]: finished collecting timing info
+07:11:00.893512 [debug] [Thread-1  ]: Began executing node model.marketplace_demo.orders
+07:11:00.893680 [debug] [Thread-1  ]: finished collecting timing info
+07:11:00.894215 [debug] [Thread-1  ]: Finished running node model.marketplace_demo.orders
+07:11:00.894796 [debug] [Thread-3  ]: Began running node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+07:11:00.895082 [debug] [Thread-4  ]: Began running node test.marketplace_demo.not_null_orders_amount.106140f9fd
+07:11:00.895437 [debug] [Thread-3  ]: Acquiring new postgres connection "test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0"
+07:11:00.895616 [debug] [Thread-2  ]: Began running node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+07:11:00.895758 [debug] [Thread-5  ]: finished collecting timing info
+07:11:00.895948 [debug] [Thread-1  ]: Began running node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+07:11:00.896257 [debug] [Thread-4  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_orders_amount.106140f9fd"
+07:11:00.896443 [debug] [Thread-3  ]: Began compiling node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+07:11:00.896762 [debug] [Thread-2  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_orders_customer_id.c5f02694af"
+07:11:00.896952 [debug] [Thread-5  ]: Began executing node model.marketplace_demo.customers
+07:11:00.897258 [debug] [Thread-1  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc"
+07:11:00.897443 [debug] [Thread-4  ]: Began compiling node test.marketplace_demo.not_null_orders_amount.106140f9fd
+07:11:00.897644 [debug] [Thread-3  ]: Compiling test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+07:11:00.897805 [debug] [Thread-2  ]: Began compiling node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+07:11:00.897975 [debug] [Thread-5  ]: finished collecting timing info
+07:11:00.898131 [debug] [Thread-1  ]: Began compiling node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+07:11:00.898288 [debug] [Thread-4  ]: Compiling test.marketplace_demo.not_null_orders_amount.106140f9fd
+07:11:00.913674 [debug] [Thread-3  ]: Writing injected SQL for node "test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0"
+07:11:00.914015 [debug] [Thread-2  ]: Compiling test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+07:11:00.914630 [debug] [Thread-5  ]: Finished running node model.marketplace_demo.customers
+07:11:00.914857 [debug] [Thread-1  ]: Compiling test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+07:11:00.924051 [debug] [Thread-4  ]: Writing injected SQL for node "test.marketplace_demo.not_null_orders_amount.106140f9fd"
+07:11:00.927997 [debug] [Thread-2  ]: Writing injected SQL for node "test.marketplace_demo.not_null_orders_customer_id.c5f02694af"
+07:11:00.928410 [debug] [Thread-5  ]: Began running node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+07:11:00.933200 [debug] [Thread-5  ]: Acquiring new postgres connection "test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249"
+07:11:00.933392 [debug] [Thread-5  ]: Began compiling node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+07:11:00.933575 [debug] [Thread-5  ]: Compiling test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+07:11:00.932369 [debug] [Thread-1  ]: Writing injected SQL for node "test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc"
+07:11:00.940090 [debug] [Thread-5  ]: Writing injected SQL for node "test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249"
+07:11:00.948154 [debug] [Thread-3  ]: finished collecting timing info
+07:11:00.948418 [debug] [Thread-3  ]: Began executing node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+07:11:00.948570 [debug] [Thread-3  ]: finished collecting timing info
+07:11:00.949066 [debug] [Thread-3  ]: Finished running node test.marketplace_demo.accepted_values_orders_order_status__completed__canceled__unfulfilled.37bdebc2e0
+07:11:00.949283 [debug] [Thread-3  ]: Began running node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+07:11:00.949701 [debug] [Thread-3  ]: Acquiring new postgres connection "test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d"
+07:11:00.949993 [debug] [Thread-3  ]: Began compiling node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+07:11:00.950176 [debug] [Thread-3  ]: Compiling test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+07:11:00.954564 [debug] [Thread-3  ]: Writing injected SQL for node "test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d"
+07:11:00.954792 [debug] [Thread-4  ]: finished collecting timing info
+07:11:00.955245 [debug] [Thread-4  ]: Began executing node test.marketplace_demo.not_null_orders_amount.106140f9fd
+07:11:00.955427 [debug] [Thread-4  ]: finished collecting timing info
+07:11:00.955818 [debug] [Thread-4  ]: Finished running node test.marketplace_demo.not_null_orders_amount.106140f9fd
+07:11:00.956014 [debug] [Thread-4  ]: Began running node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+07:11:00.956504 [debug] [Thread-4  ]: Acquiring new postgres connection "test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+07:11:00.956738 [debug] [Thread-4  ]: Began compiling node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+07:11:00.956896 [debug] [Thread-4  ]: Compiling test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+07:11:00.965303 [debug] [Thread-4  ]: Writing injected SQL for node "test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+07:11:00.965585 [debug] [Thread-5  ]: finished collecting timing info
+07:11:00.965734 [debug] [Thread-1  ]: finished collecting timing info
+07:11:00.965870 [debug] [Thread-2  ]: finished collecting timing info
+07:11:00.966178 [debug] [Thread-5  ]: Began executing node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+07:11:00.966382 [debug] [Thread-1  ]: Began executing node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+07:11:00.966564 [debug] [Thread-2  ]: Began executing node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+07:11:00.966798 [debug] [Thread-5  ]: finished collecting timing info
+07:11:00.967085 [debug] [Thread-1  ]: finished collecting timing info
+07:11:00.967265 [debug] [Thread-2  ]: finished collecting timing info
+07:11:00.967731 [debug] [Thread-5  ]: Finished running node test.marketplace_demo.unique_orders_order_trip_id.ee4ca0e249
+07:11:00.968195 [debug] [Thread-1  ]: Finished running node test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc
+07:11:00.968682 [debug] [Thread-2  ]: Finished running node test.marketplace_demo.not_null_orders_customer_id.c5f02694af
+07:11:00.968917 [debug] [Thread-5  ]: Began running node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+07:11:00.969554 [debug] [Thread-5  ]: Acquiring new postgres connection "test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1"
+07:11:00.969719 [debug] [Thread-5  ]: Began compiling node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+07:11:00.969854 [debug] [Thread-5  ]: Compiling test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+07:11:00.973816 [debug] [Thread-5  ]: Writing injected SQL for node "test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1"
+07:11:00.974014 [debug] [Thread-3  ]: finished collecting timing info
+07:11:00.974289 [debug] [Thread-3  ]: Began executing node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+07:11:00.974454 [debug] [Thread-3  ]: finished collecting timing info
+07:11:00.974826 [debug] [Thread-3  ]: Finished running node test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d
+07:11:00.981938 [debug] [Thread-4  ]: finished collecting timing info
+07:11:00.982131 [debug] [Thread-4  ]: Began executing node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+07:11:00.982270 [debug] [Thread-4  ]: finished collecting timing info
+07:11:00.982667 [debug] [Thread-4  ]: Finished running node test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+07:11:00.991032 [debug] [Thread-5  ]: finished collecting timing info
+07:11:00.991232 [debug] [Thread-5  ]: Began executing node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+07:11:00.991372 [debug] [Thread-5  ]: finished collecting timing info
+07:11:00.991788 [debug] [Thread-5  ]: Finished running node test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1
+07:11:01.057094 [debug] [MainThread]: Connection 'master' was properly closed.
+07:11:01.057382 [debug] [MainThread]: Connection 'test.marketplace_demo.not_null_orders_order_trip_id.f01f20f8cc' was properly closed.
+07:11:01.057562 [debug] [MainThread]: Connection 'test.marketplace_demo.not_null_orders_customer_id.c5f02694af' was properly closed.
+07:11:01.057687 [debug] [MainThread]: Connection 'test.marketplace_demo.not_null_customers_customer_id.5c9bf9911d' was properly closed.
+07:11:01.057801 [debug] [MainThread]: Connection 'test.marketplace_demo.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2' was properly closed.
+07:11:01.057912 [debug] [MainThread]: Connection 'test.marketplace_demo.unique_customers_customer_id.c5af1ff4b1' was properly closed.
+07:11:01.141301 [info ] [MainThread]: Done.
+07:11:01.141864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10d4269490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10d5263350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10d6a7df50>]}
+
+
+============================== 2022-06-10 10:09:25.822042 | f66650a6-d43f-49a7-a82d-dc031302e09f ==============================
+10:09:25.822071 [info ] [MainThread]: Running with dbt=1.1.0
+10:09:25.824928 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/data/userdata/profiles/dbt/286f4de16da95bae985c38b53413da9e', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'target': 'phedrus_1', 'full_refresh': True, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+10:09:25.825295 [debug] [MainThread]: Tracking: tracking
+10:09:25.864674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10c0538dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10c0767f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10c0538d50>]}
+10:09:26.104847 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+10:09:26.105120 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+10:09:26.112450 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f66650a6-d43f-49a7-a82d-dc031302e09f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10c0533c90>]}
+10:09:26.259737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f66650a6-d43f-49a7-a82d-dc031302e09f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10c100d7d0>]}
+10:09:26.260145 [info ] [MainThread]: Found 2 models, 8 tests, 0 snapshots, 0 analyses, 167 macros, 0 operations, 4 seed files, 0 sources, 0 exposures, 2 metrics
+10:09:26.260443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f66650a6-d43f-49a7-a82d-dc031302e09f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10c0fd8ed0>]}
+10:09:26.262247 [info ] [MainThread]: 
+10:09:26.262903 [debug] [MainThread]: Acquiring new postgres connection "master"
+10:09:26.263961 [debug] [ThreadPool]: Acquiring new postgres connection "list_marketplace_demo"
+10:09:26.274553 [debug] [ThreadPool]: Using postgres connection "list_marketplace_demo"
+10:09:26.274729 [debug] [ThreadPool]: On list_marketplace_demo: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "connection_name": "list_marketplace_demo"} */
+
+    select distinct nspname from pg_namespace
+  
+10:09:26.274855 [debug] [ThreadPool]: Opening a new connection, currently in state init
+10:09:26.308120 [debug] [ThreadPool]: SQL status: SELECT 50 in 0.03 seconds
+10:09:26.309544 [debug] [ThreadPool]: On list_marketplace_demo: Close
+10:09:26.310962 [debug] [ThreadPool]: Acquiring new postgres connection "list_marketplace_demo_public"
+10:09:26.316907 [debug] [ThreadPool]: Using postgres connection "list_marketplace_demo_public"
+10:09:26.317103 [debug] [ThreadPool]: On list_marketplace_demo_public: BEGIN
+10:09:26.317233 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+10:09:26.335624 [debug] [ThreadPool]: SQL status: BEGIN in 0.02 seconds
+10:09:26.335803 [debug] [ThreadPool]: Using postgres connection "list_marketplace_demo_public"
+10:09:26.335931 [debug] [ThreadPool]: On list_marketplace_demo_public: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "connection_name": "list_marketplace_demo_public"} */
+select
+      'marketplace_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'marketplace_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+  
+10:09:26.340056 [debug] [ThreadPool]: SQL status: SELECT 18 in 0.0 seconds
+10:09:26.341570 [debug] [ThreadPool]: On list_marketplace_demo_public: ROLLBACK
+10:09:26.342931 [debug] [ThreadPool]: On list_marketplace_demo_public: Close
+10:09:26.347461 [debug] [MainThread]: Using postgres connection "master"
+10:09:26.347644 [debug] [MainThread]: On master: BEGIN
+10:09:26.347768 [debug] [MainThread]: Opening a new connection, currently in state init
+10:09:26.365878 [debug] [MainThread]: SQL status: BEGIN in 0.02 seconds
+10:09:26.366056 [debug] [MainThread]: Using postgres connection "master"
+10:09:26.366183 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+10:09:26.393286 [debug] [MainThread]: SQL status: SELECT 5 in 0.03 seconds
+10:09:26.394549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f66650a6-d43f-49a7-a82d-dc031302e09f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10bed145d0>]}
+10:09:26.394852 [debug] [MainThread]: On master: ROLLBACK
+10:09:26.396195 [debug] [MainThread]: Using postgres connection "master"
+10:09:26.396342 [debug] [MainThread]: On master: BEGIN
+10:09:26.398784 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+10:09:26.398944 [debug] [MainThread]: On master: COMMIT
+10:09:26.399068 [debug] [MainThread]: Using postgres connection "master"
+10:09:26.399188 [debug] [MainThread]: On master: COMMIT
+10:09:26.400473 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+10:09:26.400628 [debug] [MainThread]: On master: Close
+10:09:26.401065 [info ] [MainThread]: Concurrency: 5 threads (target='phedrus_1')
+10:09:26.401365 [info ] [MainThread]: 
+10:09:26.404164 [debug] [Thread-1  ]: Began running node model.marketplace_demo.customers
+10:09:26.404388 [debug] [Thread-2  ]: Began running node model.marketplace_demo.orders
+10:09:26.404658 [info ] [Thread-1  ]: 1 of 2 START view model public.customers ....................................... [RUN]
+10:09:26.404927 [info ] [Thread-2  ]: 2 of 2 START view model public.orders .......................................... [RUN]
+10:09:26.405818 [debug] [Thread-1  ]: Acquiring new postgres connection "model.marketplace_demo.customers"
+10:09:26.406057 [debug] [Thread-1  ]: Began compiling node model.marketplace_demo.customers
+10:09:26.406733 [debug] [Thread-1  ]: Compiling model.marketplace_demo.customers
+10:09:26.406449 [debug] [Thread-2  ]: Acquiring new postgres connection "model.marketplace_demo.orders"
+10:09:26.409935 [debug] [Thread-1  ]: Writing injected SQL for node "model.marketplace_demo.customers"
+10:09:26.410154 [debug] [Thread-2  ]: Began compiling node model.marketplace_demo.orders
+10:09:26.410424 [debug] [Thread-2  ]: Compiling model.marketplace_demo.orders
+10:09:26.412862 [debug] [Thread-2  ]: Writing injected SQL for node "model.marketplace_demo.orders"
+10:09:26.433260 [debug] [Thread-2  ]: finished collecting timing info
+10:09:26.433466 [debug] [Thread-1  ]: finished collecting timing info
+10:09:26.433632 [debug] [Thread-2  ]: Began executing node model.marketplace_demo.orders
+10:09:26.433806 [debug] [Thread-1  ]: Began executing node model.marketplace_demo.customers
+10:09:26.468337 [debug] [Thread-2  ]: Writing runtime SQL for node "model.marketplace_demo.orders"
+10:09:26.470452 [debug] [Thread-1  ]: Writing runtime SQL for node "model.marketplace_demo.customers"
+10:09:26.529011 [debug] [Thread-1  ]: Using postgres connection "model.marketplace_demo.customers"
+10:09:26.529264 [debug] [Thread-1  ]: On model.marketplace_demo.customers: BEGIN
+10:09:26.529396 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+10:09:26.538919 [debug] [Thread-2  ]: Using postgres connection "model.marketplace_demo.orders"
+10:09:26.539132 [debug] [Thread-2  ]: On model.marketplace_demo.orders: BEGIN
+10:09:26.539259 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+10:09:26.548267 [debug] [Thread-1  ]: SQL status: BEGIN in 0.02 seconds
+10:09:26.548476 [debug] [Thread-1  ]: Using postgres connection "model.marketplace_demo.customers"
+10:09:26.548608 [debug] [Thread-1  ]: On model.marketplace_demo.customers: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "node_id": "model.marketplace_demo.customers"} */
+
+  create view "marketplace_demo"."public"."customers__dbt_tmp" as (
+    with customers as (
+
+    select * from "marketplace_demo"."public"."newcustomer"
+
+),
+
+
+orders as (
+
+    select * from "marketplace_demo"."public"."neworder"
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+        min(datestr) as first_order,
+        max(datestr) as most_recent_order,
+        count(order_trip_id) as number_of_orders
+    from orders
+
+    group by customer_id
+
+),
+
+customer_payments as (
+
+    select
+        orders.customer_id,
+        sum(orders.gross_bookings_usd) as total_amount
+
+    from orders
+
+    group by orders.customer_id
+
+),
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customers.signup_date::date,
+        customers.tier,
+        customers.city,
+        customers.state,
+        customers.country,
+        customer_orders.first_order,
+        customer_orders.most_recent_order,
+        customer_orders.number_of_orders,
+        customer_payments.total_amount as customer_lifetime_value
+
+    from customers
+
+    left join customer_orders
+        on customers.customer_id = customer_orders.customer_id
+
+    left join customer_payments
+        on customers.customer_id = customer_payments.customer_id
+
+)
+
+select * from final
+  );
+10:09:26.557792 [debug] [Thread-2  ]: SQL status: BEGIN in 0.02 seconds
+10:09:26.557998 [debug] [Thread-2  ]: Using postgres connection "model.marketplace_demo.orders"
+10:09:26.558129 [debug] [Thread-2  ]: On model.marketplace_demo.orders: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "node_id": "model.marketplace_demo.orders"} */
+
+  create view "marketplace_demo"."public"."orders__dbt_tmp" as (
+    with orders as (
+
+    select * from "marketplace_demo"."public"."neworder"
+
+),
+
+
+order_payments as (
+
+    select
+        order_trip_id,
+
+        sum(gross_bookings_usd) as total_amount
+
+    from orders
+
+    group by order_trip_id
+
+),
+
+final as (
+
+    select
+        orders.order_trip_id,
+        orders.customer_id,
+        orders.datestr::date as order_date,
+        orders.order_status,
+        order_payments.total_amount as amount
+
+    from orders
+
+
+    left join order_payments
+        on orders.order_trip_id = order_payments.order_trip_id
+
+)
+
+select * from final
+  );
+10:09:26.559770 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.01 seconds
+10:09:26.567618 [debug] [Thread-1  ]: Using postgres connection "model.marketplace_demo.customers"
+10:09:26.567841 [debug] [Thread-2  ]: SQL status: CREATE VIEW in 0.01 seconds
+10:09:26.567996 [debug] [Thread-1  ]: On model.marketplace_demo.customers: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "node_id": "model.marketplace_demo.customers"} */
+alter table "marketplace_demo"."public"."customers" rename to "customers__dbt_backup"
+10:09:26.570347 [debug] [Thread-2  ]: Using postgres connection "model.marketplace_demo.orders"
+10:09:26.570604 [debug] [Thread-2  ]: On model.marketplace_demo.orders: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "node_id": "model.marketplace_demo.orders"} */
+alter table "marketplace_demo"."public"."orders" rename to "orders__dbt_backup"
+10:09:26.573341 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+10:09:26.575578 [debug] [Thread-1  ]: Using postgres connection "model.marketplace_demo.customers"
+10:09:26.575783 [debug] [Thread-2  ]: SQL status: ALTER TABLE in 0.01 seconds
+10:09:26.575934 [debug] [Thread-1  ]: On model.marketplace_demo.customers: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "node_id": "model.marketplace_demo.customers"} */
+alter table "marketplace_demo"."public"."customers__dbt_tmp" rename to "customers"
+10:09:26.578022 [debug] [Thread-2  ]: Using postgres connection "model.marketplace_demo.orders"
+10:09:26.578276 [debug] [Thread-2  ]: On model.marketplace_demo.orders: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "node_id": "model.marketplace_demo.orders"} */
+alter table "marketplace_demo"."public"."orders__dbt_tmp" rename to "orders"
+10:09:26.579789 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+10:09:26.585162 [debug] [Thread-2  ]: SQL status: ALTER TABLE in 0.01 seconds
+10:09:26.587091 [debug] [Thread-1  ]: On model.marketplace_demo.customers: COMMIT
+10:09:26.588512 [debug] [Thread-1  ]: Using postgres connection "model.marketplace_demo.customers"
+10:09:26.588735 [debug] [Thread-1  ]: On model.marketplace_demo.customers: COMMIT
+10:09:26.588258 [debug] [Thread-2  ]: On model.marketplace_demo.orders: COMMIT
+10:09:26.589063 [debug] [Thread-2  ]: Using postgres connection "model.marketplace_demo.orders"
+10:09:26.589315 [debug] [Thread-2  ]: On model.marketplace_demo.orders: COMMIT
+10:09:26.591764 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+10:09:26.596530 [debug] [Thread-1  ]: Using postgres connection "model.marketplace_demo.customers"
+10:09:26.596731 [debug] [Thread-2  ]: SQL status: COMMIT in 0.01 seconds
+10:09:26.596885 [debug] [Thread-1  ]: On model.marketplace_demo.customers: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "node_id": "model.marketplace_demo.customers"} */
+drop view if exists "marketplace_demo"."public"."customers__dbt_backup" cascade
+10:09:26.598587 [debug] [Thread-2  ]: Using postgres connection "model.marketplace_demo.orders"
+10:09:26.598842 [debug] [Thread-2  ]: On model.marketplace_demo.orders: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "default", "target_name": "phedrus_1", "node_id": "model.marketplace_demo.orders"} */
+drop view if exists "marketplace_demo"."public"."orders__dbt_backup" cascade
+10:09:26.602768 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+10:09:26.603825 [debug] [Thread-1  ]: finished collecting timing info
+10:09:26.604009 [debug] [Thread-2  ]: SQL status: DROP VIEW in 0.01 seconds
+10:09:26.604261 [debug] [Thread-1  ]: On model.marketplace_demo.customers: Close
+10:09:26.605297 [debug] [Thread-2  ]: finished collecting timing info
+10:09:26.605602 [debug] [Thread-2  ]: On model.marketplace_demo.orders: Close
+10:09:26.606041 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f66650a6-d43f-49a7-a82d-dc031302e09f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10be1a3050>]}
+10:09:26.606503 [info ] [Thread-1  ]: 1 of 2 OK created view model public.customers .................................. [[32mCREATE VIEW[0m in 0.20s]
+10:09:26.607301 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f66650a6-d43f-49a7-a82d-dc031302e09f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10be195910>]}
+10:09:26.607736 [debug] [Thread-1  ]: Finished running node model.marketplace_demo.customers
+10:09:26.608157 [info ] [Thread-2  ]: 2 of 2 OK created view model public.orders ..................................... [[32mCREATE VIEW[0m in 0.20s]
+10:09:26.609205 [debug] [Thread-2  ]: Finished running node model.marketplace_demo.orders
+10:09:26.705189 [debug] [MainThread]: Acquiring new postgres connection "master"
+10:09:26.705489 [debug] [MainThread]: Using postgres connection "master"
+10:09:26.705630 [debug] [MainThread]: On master: BEGIN
+10:09:26.705753 [debug] [MainThread]: Opening a new connection, currently in state closed
+10:09:26.724558 [debug] [MainThread]: SQL status: BEGIN in 0.02 seconds
+10:09:26.724827 [debug] [MainThread]: On master: COMMIT
+10:09:26.724963 [debug] [MainThread]: Using postgres connection "master"
+10:09:26.725119 [debug] [MainThread]: On master: COMMIT
+10:09:26.726469 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+10:09:26.726638 [debug] [MainThread]: On master: Close
+10:09:26.727147 [info ] [MainThread]: 
+10:09:26.727448 [info ] [MainThread]: Finished running 2 view models in 0.46s.
+10:09:26.727887 [debug] [MainThread]: Connection 'master' was properly closed.
+10:09:26.728139 [debug] [MainThread]: Connection 'model.marketplace_demo.customers' was properly closed.
+10:09:26.728383 [debug] [MainThread]: Connection 'model.marketplace_demo.orders' was properly closed.
+10:09:26.818200 [info ] [MainThread]: 
+10:09:26.818577 [info ] [MainThread]: [32mCompleted successfully[0m
+10:09:26.819131 [info ] [MainThread]: 
+10:09:26.819569 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+10:09:26.820162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10c0767f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10bebd86d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10bebd82d0>]}
