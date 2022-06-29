@@ -1,0 +1,1 @@
+select date '2004-03-07' + j - i as AllDate from generate_series(0, extract(doy from date '2004-03-07')::int - 1) as i, generate_series(0, extract(doy from date '2004-08-16')::int - 1) as j
