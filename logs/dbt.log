@@ -2001,3 +2001,337 @@ drop view if exists "marketplace_demo"."public"."orders__dbt_backup" cascade
 20:53:33.792102 [info ] [MainThread]: 
 20:53:33.792642 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
 20:53:33.793240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddb773a590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd96142610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd96142510>]}
+
+
+============================== 2022-06-29 20:55:46.742508 | d4059dd2-6ac7-47c0-b551-6ff60d63bcab ==============================
+20:55:46.742540 [info ] [MainThread]: Running with dbt=1.1.1
+20:55:46.743512 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/data/userdata/profiles/dbt/286f4de16da95bae985c38b53413da9e', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'target': 'apicheck5_23', 'full_refresh': True, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+20:55:46.743855 [debug] [MainThread]: Tracking: tracking
+20:55:46.760185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc824077650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc824038390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc82405b5d0>]}
+20:55:46.872035 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+20:55:46.872341 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+20:55:46.910667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd4059dd2-6ac7-47c0-b551-6ff60d63bcab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc82404e150>]}
+20:55:46.979234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd4059dd2-6ac7-47c0-b551-6ff60d63bcab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc822893090>]}
+20:55:46.979679 [info ] [MainThread]: Found 2 models, 8 tests, 0 snapshots, 5 analyses, 167 macros, 0 operations, 4 seed files, 0 sources, 0 exposures, 2 metrics
+20:55:46.980043 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd4059dd2-6ac7-47c0-b551-6ff60d63bcab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc822893310>]}
+20:55:46.982291 [info ] [MainThread]: 
+20:55:46.982937 [debug] [MainThread]: Acquiring new postgres connection "master"
+20:55:46.983961 [debug] [ThreadPool]: Acquiring new postgres connection "list_marketplace_demo"
+20:55:46.996121 [debug] [ThreadPool]: Using postgres connection "list_marketplace_demo"
+20:55:46.996316 [debug] [ThreadPool]: On list_marketplace_demo: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "default", "target_name": "apicheck5_23", "connection_name": "list_marketplace_demo"} */
+
+    select distinct nspname from pg_namespace
+  
+20:55:46.996484 [debug] [ThreadPool]: Opening a new connection, currently in state init
+20:55:47.027546 [debug] [ThreadPool]: SQL status: SELECT 51 in 0.03 seconds
+20:55:47.029076 [debug] [ThreadPool]: On list_marketplace_demo: Close
+20:55:47.030703 [debug] [ThreadPool]: Acquiring new postgres connection "list_marketplace_demo_public"
+20:55:47.037433 [debug] [ThreadPool]: Using postgres connection "list_marketplace_demo_public"
+20:55:47.037626 [debug] [ThreadPool]: On list_marketplace_demo_public: BEGIN
+20:55:47.037788 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+20:55:47.052964 [debug] [ThreadPool]: SQL status: BEGIN in 0.02 seconds
+20:55:47.053159 [debug] [ThreadPool]: Using postgres connection "list_marketplace_demo_public"
+20:55:47.053326 [debug] [ThreadPool]: On list_marketplace_demo_public: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "default", "target_name": "apicheck5_23", "connection_name": "list_marketplace_demo_public"} */
+select
+      'marketplace_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'marketplace_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+  
+20:55:47.056335 [debug] [ThreadPool]: SQL status: SELECT 18 in 0.0 seconds
+20:55:47.057846 [debug] [ThreadPool]: On list_marketplace_demo_public: ROLLBACK
+20:55:47.058889 [debug] [ThreadPool]: On list_marketplace_demo_public: Close
+20:55:47.063968 [debug] [MainThread]: Using postgres connection "master"
+20:55:47.064160 [debug] [MainThread]: On master: BEGIN
+20:55:47.064322 [debug] [MainThread]: Opening a new connection, currently in state init
+20:55:47.079318 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+20:55:47.079560 [debug] [MainThread]: Using postgres connection "master"
+20:55:47.079731 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "default", "target_name": "apicheck5_23", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+20:55:47.103887 [debug] [MainThread]: SQL status: SELECT 5 in 0.02 seconds
+20:55:47.105244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd4059dd2-6ac7-47c0-b551-6ff60d63bcab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8228cc050>]}
+20:55:47.105546 [debug] [MainThread]: On master: ROLLBACK
+20:55:47.106547 [debug] [MainThread]: Using postgres connection "master"
+20:55:47.106922 [debug] [MainThread]: On master: BEGIN
+20:55:47.108669 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+20:55:47.108987 [debug] [MainThread]: On master: COMMIT
+20:55:47.109156 [debug] [MainThread]: Using postgres connection "master"
+20:55:47.109316 [debug] [MainThread]: On master: COMMIT
+20:55:47.110269 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+20:55:47.110583 [debug] [MainThread]: On master: Close
+20:55:47.111017 [info ] [MainThread]: Concurrency: 5 threads (target='apicheck5_23')
+20:55:47.111412 [info ] [MainThread]: 
+20:55:47.114296 [debug] [Thread-1  ]: Began running node model.marketplace_demo.customers
+20:55:47.114633 [info ] [Thread-1  ]: 1 of 2 START view model public.customers ....................................... [RUN]
+20:55:47.115284 [debug] [Thread-1  ]: Acquiring new postgres connection "model.marketplace_demo.customers"
+20:55:47.115562 [debug] [Thread-1  ]: Began compiling node model.marketplace_demo.customers
+20:55:47.115819 [debug] [Thread-1  ]: Compiling model.marketplace_demo.customers
+20:55:47.119233 [debug] [Thread-1  ]: Writing injected SQL for node "model.marketplace_demo.customers"
+20:55:47.119679 [debug] [Thread-2  ]: Began running node model.marketplace_demo.orders
+20:55:47.120015 [info ] [Thread-2  ]: 2 of 2 START view model public.orders .......................................... [RUN]
+20:55:47.120729 [debug] [Thread-2  ]: Acquiring new postgres connection "model.marketplace_demo.orders"
+20:55:47.120921 [debug] [Thread-2  ]: Began compiling node model.marketplace_demo.orders
+20:55:47.121146 [debug] [Thread-2  ]: Compiling model.marketplace_demo.orders
+20:55:47.123645 [debug] [Thread-2  ]: Writing injected SQL for node "model.marketplace_demo.orders"
+20:55:47.132301 [debug] [Thread-1  ]: finished collecting timing info
+20:55:47.132514 [debug] [Thread-1  ]: Began executing node model.marketplace_demo.customers
+20:55:47.140937 [debug] [Thread-2  ]: finished collecting timing info
+20:55:47.141188 [debug] [Thread-2  ]: Began executing node model.marketplace_demo.orders
+20:55:47.188425 [debug] [Thread-2  ]: Writing runtime SQL for node "model.marketplace_demo.orders"
+20:55:47.190156 [debug] [Thread-1  ]: Writing runtime SQL for node "model.marketplace_demo.customers"
+20:55:47.200567 [debug] [Thread-2  ]: Using postgres connection "model.marketplace_demo.orders"
+20:55:47.200756 [debug] [Thread-2  ]: On model.marketplace_demo.orders: BEGIN
+20:55:47.200919 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+20:55:47.203030 [debug] [Thread-1  ]: Using postgres connection "model.marketplace_demo.customers"
+20:55:47.203324 [debug] [Thread-1  ]: On model.marketplace_demo.customers: BEGIN
+20:55:47.203536 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+20:55:47.216161 [debug] [Thread-2  ]: SQL status: BEGIN in 0.02 seconds
+20:55:47.216357 [debug] [Thread-2  ]: Using postgres connection "model.marketplace_demo.orders"
+20:55:47.216525 [debug] [Thread-2  ]: On model.marketplace_demo.orders: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "default", "target_name": "apicheck5_23", "node_id": "model.marketplace_demo.orders"} */
+
+  create view "marketplace_demo"."public"."orders__dbt_tmp" as (
+    with orders as (
+
+    select * from "marketplace_demo"."public"."neworder"
+
+),
+
+
+order_payments as (
+
+    select
+        order_trip_id,
+
+        sum(gross_bookings_usd) as total_amount
+
+    from orders
+
+    group by order_trip_id
+
+),
+
+final as (
+
+    select
+        orders.order_trip_id,
+        orders.customer_id,
+        orders.datestr::date as order_date,
+        orders.order_status,
+        order_payments.total_amount as amount
+
+    from orders
+
+
+    left join order_payments
+        on orders.order_trip_id = order_payments.order_trip_id
+
+)
+
+select * from final
+  );
+20:55:47.219755 [debug] [Thread-1  ]: SQL status: BEGIN in 0.02 seconds
+20:55:47.220121 [debug] [Thread-1  ]: Using postgres connection "model.marketplace_demo.customers"
+20:55:47.220286 [debug] [Thread-1  ]: On model.marketplace_demo.customers: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "default", "target_name": "apicheck5_23", "node_id": "model.marketplace_demo.customers"} */
+
+  create view "marketplace_demo"."public"."customers__dbt_tmp" as (
+    with customers as (
+
+    select * from "marketplace_demo"."public"."newcustomer"
+
+),
+
+
+orders as (
+
+    select * from "marketplace_demo"."public"."neworder"
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+        min(datestr) as first_order,
+        max(datestr) as most_recent_order,
+        count(order_trip_id) as number_of_orders
+    from orders
+
+    group by customer_id
+
+),
+
+customer_payments as (
+
+    select
+        orders.customer_id,
+        sum(orders.gross_bookings_usd) as total_amount
+
+    from orders
+
+    group by orders.customer_id
+
+),
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customers.signup_date::date,
+        customers.tier,
+        customers.city,
+        customers.state,
+        customers.country,
+        customer_orders.first_order,
+        customer_orders.most_recent_order,
+        customer_orders.number_of_orders,
+        customer_payments.total_amount as customer_lifetime_value
+
+    from customers
+
+    left join customer_orders
+        on customers.customer_id = customer_orders.customer_id
+
+    left join customer_payments
+        on customers.customer_id = customer_payments.customer_id
+
+)
+
+select * from final
+  );
+20:55:47.221261 [debug] [Thread-2  ]: SQL status: CREATE VIEW in 0.0 seconds
+20:55:47.227992 [debug] [Thread-2  ]: Using postgres connection "model.marketplace_demo.orders"
+20:55:47.228235 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.01 seconds
+20:55:47.228442 [debug] [Thread-2  ]: On model.marketplace_demo.orders: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "default", "target_name": "apicheck5_23", "node_id": "model.marketplace_demo.orders"} */
+alter table "marketplace_demo"."public"."orders" rename to "orders__dbt_backup"
+20:55:47.230981 [debug] [Thread-1  ]: Using postgres connection "model.marketplace_demo.customers"
+20:55:47.231324 [debug] [Thread-1  ]: On model.marketplace_demo.customers: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "default", "target_name": "apicheck5_23", "node_id": "model.marketplace_demo.customers"} */
+alter table "marketplace_demo"."public"."customers" rename to "customers__dbt_backup"
+20:55:47.232971 [debug] [Thread-2  ]: SQL status: ALTER TABLE in 0.0 seconds
+20:55:47.235337 [debug] [Thread-2  ]: Using postgres connection "model.marketplace_demo.orders"
+20:55:47.235604 [debug] [Thread-2  ]: On model.marketplace_demo.orders: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "default", "target_name": "apicheck5_23", "node_id": "model.marketplace_demo.orders"} */
+alter table "marketplace_demo"."public"."orders__dbt_tmp" rename to "orders"
+20:55:47.235888 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+20:55:47.238292 [debug] [Thread-1  ]: Using postgres connection "model.marketplace_demo.customers"
+20:55:47.238520 [debug] [Thread-1  ]: On model.marketplace_demo.customers: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "default", "target_name": "apicheck5_23", "node_id": "model.marketplace_demo.customers"} */
+alter table "marketplace_demo"."public"."customers__dbt_tmp" rename to "customers"
+20:55:47.238791 [debug] [Thread-2  ]: SQL status: ALTER TABLE in 0.0 seconds
+20:55:47.245020 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.01 seconds
+20:55:47.252024 [debug] [Thread-2  ]: On model.marketplace_demo.orders: COMMIT
+20:55:47.252261 [debug] [Thread-2  ]: Using postgres connection "model.marketplace_demo.orders"
+20:55:47.252476 [debug] [Thread-2  ]: On model.marketplace_demo.orders: COMMIT
+20:55:47.252976 [debug] [Thread-1  ]: On model.marketplace_demo.customers: COMMIT
+20:55:47.253161 [debug] [Thread-1  ]: Using postgres connection "model.marketplace_demo.customers"
+20:55:47.253325 [debug] [Thread-1  ]: On model.marketplace_demo.customers: COMMIT
+20:55:47.255876 [debug] [Thread-2  ]: SQL status: COMMIT in 0.0 seconds
+20:55:47.261287 [debug] [Thread-2  ]: Using postgres connection "model.marketplace_demo.orders"
+20:55:47.261520 [debug] [Thread-2  ]: On model.marketplace_demo.orders: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "default", "target_name": "apicheck5_23", "node_id": "model.marketplace_demo.orders"} */
+drop view if exists "marketplace_demo"."public"."orders__dbt_backup" cascade
+20:55:47.261815 [debug] [Thread-1  ]: SQL status: COMMIT in 0.01 seconds
+20:55:47.263617 [debug] [Thread-1  ]: Using postgres connection "model.marketplace_demo.customers"
+20:55:47.263837 [debug] [Thread-1  ]: On model.marketplace_demo.customers: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "default", "target_name": "apicheck5_23", "node_id": "model.marketplace_demo.customers"} */
+drop view if exists "marketplace_demo"."public"."customers__dbt_backup" cascade
+20:55:47.264118 [debug] [Thread-2  ]: SQL status: DROP VIEW in 0.0 seconds
+20:55:47.265184 [debug] [Thread-2  ]: finished collecting timing info
+20:55:47.265389 [debug] [Thread-2  ]: On model.marketplace_demo.orders: Close
+20:55:47.265869 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4059dd2-6ac7-47c0-b551-6ff60d63bcab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8204b7410>]}
+20:55:47.266255 [info ] [Thread-2  ]: 2 of 2 OK created view model public.orders ..................................... [[32mCREATE VIEW[0m in 0.15s]
+20:55:47.266955 [debug] [Thread-2  ]: Finished running node model.marketplace_demo.orders
+20:55:47.267336 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+20:55:47.268525 [debug] [Thread-1  ]: finished collecting timing info
+20:55:47.268830 [debug] [Thread-1  ]: On model.marketplace_demo.customers: Close
+20:55:47.269301 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4059dd2-6ac7-47c0-b551-6ff60d63bcab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc82048ae50>]}
+20:55:47.269658 [info ] [Thread-1  ]: 1 of 2 OK created view model public.customers .................................. [[32mCREATE VIEW[0m in 0.15s]
+20:55:47.271896 [debug] [Thread-1  ]: Finished running node model.marketplace_demo.customers
+20:55:47.314809 [debug] [MainThread]: Acquiring new postgres connection "master"
+20:55:47.315028 [debug] [MainThread]: Using postgres connection "master"
+20:55:47.315197 [debug] [MainThread]: On master: BEGIN
+20:55:47.315401 [debug] [MainThread]: Opening a new connection, currently in state closed
+20:55:47.331020 [debug] [MainThread]: SQL status: BEGIN in 0.02 seconds
+20:55:47.331221 [debug] [MainThread]: On master: COMMIT
+20:55:47.331442 [debug] [MainThread]: Using postgres connection "master"
+20:55:47.331612 [debug] [MainThread]: On master: COMMIT
+20:55:47.332520 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+20:55:47.332712 [debug] [MainThread]: On master: Close
+20:55:47.333183 [info ] [MainThread]: 
+20:55:47.333530 [info ] [MainThread]: Finished running 2 view models in 0.35s.
+20:55:47.333988 [debug] [MainThread]: Connection 'master' was properly closed.
+20:55:47.334283 [debug] [MainThread]: Connection 'model.marketplace_demo.customers' was properly closed.
+20:55:47.334446 [debug] [MainThread]: Connection 'model.marketplace_demo.orders' was properly closed.
+20:55:47.393447 [info ] [MainThread]: 
+20:55:47.393812 [info ] [MainThread]: [32mCompleted successfully[0m
+20:55:47.394372 [info ] [MainThread]: 
+20:55:47.394845 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+20:55:47.395467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc820442d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8204b7650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8204b7e90>]}
